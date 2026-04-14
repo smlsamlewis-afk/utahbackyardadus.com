@@ -22,7 +22,7 @@
     html { scroll-behavior: smooth; }
     body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
 
-    /* ─── NAV ─── */
+    /* NAV */
     nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--white); border-bottom: 1px solid #e5e7eb;
@@ -34,26 +34,16 @@
     .nav-right { display: flex; align-items: center; gap: 20px; }
     .nav-phone { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.95rem; }
     .nav-phone:hover { color: var(--green); }
-    .nav-cta {
-      background: var(--green); color: var(--white);
-      text-decoration: none; padding: 10px 22px;
-      border-radius: var(--radius); font-weight: 600; font-size: 0.9rem;
-      transition: background 0.2s;
-    }
+    .nav-cta { background: var(--green); color: var(--white); text-decoration: none; padding: 10px 22px; border-radius: var(--radius); font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
     .nav-cta:hover { background: var(--green-light); }
 
-    /* ─── HERO ─── */
+    /* HERO */
     .hero {
       background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%);
       color: var(--white); padding: 80px 5% 90px;
       display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: center;
     }
-    .hero-badge {
-      display: inline-block; background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.3); color: #d8f3dc;
-      padding: 5px 14px; border-radius: 99px; font-size: 0.8rem;
-      font-weight: 600; letter-spacing: 0.5px; margin-bottom: 20px; text-transform: uppercase;
-    }
+    .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #d8f3dc; padding: 5px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 20px; text-transform: uppercase; }
     .hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.5px; }
     .hero h1 em { color: #74c69d; font-style: normal; }
     .hero p { font-size: 1.1rem; opacity: 0.88; max-width: 500px; margin-bottom: 30px; }
@@ -62,70 +52,40 @@
     .stat strong { display: block; font-size: 1.6rem; font-weight: 800; color: #74c69d; }
     .stat span { font-size: 0.8rem; opacity: 0.75; }
 
-    /* ─── FORM CARD ─── */
-    .form-card {
-      background: var(--white); border-radius: 16px; padding: 36px 32px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.25); color: var(--text);
-    }
+    /* FORM CARD */
+    .form-card { background: var(--white); border-radius: 16px; padding: 36px 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); color: var(--text); }
     .form-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; color: var(--navy); }
     .form-card > p { font-size: 0.88rem; color: var(--muted); margin-bottom: 22px; }
     .form-group { margin-bottom: 14px; }
     .form-group label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 5px; color: var(--navy); }
-    .form-group input, .form-group select, .form-group textarea {
-      width: 100%; padding: 11px 14px; border: 1.5px solid #d1d5db; border-radius: 8px;
-      font-size: 0.95rem; color: var(--text); background: #f9fafb;
-      transition: border 0.2s; font-family: inherit;
-    }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-      outline: none; border-color: var(--green); background: var(--white);
-    }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 11px 14px; border: 1.5px solid #d1d5db; border-radius: 8px; font-size: 0.95rem; color: var(--text); background: #f9fafb; transition: border 0.2s; font-family: inherit; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--green); background: var(--white); }
     .form-group textarea { resize: vertical; min-height: 75px; }
-    .submit-btn {
-      width: 100%; padding: 14px; background: var(--green); color: var(--white);
-      border: none; border-radius: 8px; font-size: 1rem; font-weight: 700;
-      cursor: pointer; transition: background 0.2s; margin-top: 4px;
-    }
+    .submit-btn { width: 100%; padding: 14px; background: var(--green); color: var(--white); border: none; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 4px; }
     .submit-btn:hover { background: var(--green-light); }
+    .submit-btn:disabled { background: var(--muted); cursor: not-allowed; }
     .form-note { text-align: center; font-size: 0.78rem; color: var(--muted); margin-top: 10px; }
-    .success-msg {
-      display: none; text-align: center; padding: 24px;
-      background: var(--green-pale); border-radius: 10px; color: var(--green); font-weight: 600;
-    }
+    .success-msg { display: none; text-align: center; padding: 24px; background: var(--green-pale); border-radius: 10px; color: var(--green); font-weight: 600; }
     .success-msg strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
 
-    /* ─── TRUST BAR ─── */
-    .trust-bar {
-      background: var(--navy);
-      display: flex; justify-content: center; flex-wrap: wrap;
-    }
-    .trust-item {
-      display: flex; align-items: center; gap: 10px;
-      padding: 18px 28px; color: rgba(255,255,255,0.85); font-size: 0.88rem;
-      border-right: 1px solid rgba(255,255,255,0.1);
-    }
+    /* TRUST BAR */
+    .trust-bar { background: var(--navy); display: flex; justify-content: center; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 10px; padding: 18px 28px; color: rgba(255,255,255,0.85); font-size: 0.88rem; border-right: 1px solid rgba(255,255,255,0.1); }
     .trust-item:last-child { border-right: none; }
 
-    /* ─── SECTION BASE ─── */
+    /* SECTIONS */
     section { padding: 80px 5%; }
-    .section-label {
-      display: inline-block; background: var(--green-pale); color: var(--green);
-      font-size: 0.78rem; font-weight: 700; letter-spacing: 1px;
-      text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 14px;
-    }
+    .section-label { display: inline-block; background: var(--green-pale); color: var(--green); font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 14px; }
     .section-title { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; color: var(--navy); letter-spacing: -0.4px; line-height: 1.2; margin-bottom: 14px; }
     .section-sub { font-size: 1.05rem; color: var(--muted); max-width: 600px; }
     .centered { text-align: center; }
     .centered .section-sub { margin: 0 auto; }
 
-    /* ─── SERVICES ─── */
+    /* SERVICES */
     .services { background: var(--gray); }
     .services-inner { max-width: 1100px; margin: 0 auto; }
     .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 50px; }
-    .service-card {
-      background: var(--white); border-radius: 14px; padding: 32px 28px;
-      box-shadow: var(--shadow); border-top: 4px solid var(--green);
-      transition: transform 0.2s;
-    }
+    .service-card { background: var(--white); border-radius: 14px; padding: 32px 28px; box-shadow: var(--shadow); border-top: 4px solid var(--green); transition: transform 0.2s; }
     .service-card:hover { transform: translateY(-4px); }
     .service-icon { font-size: 2.4rem; margin-bottom: 14px; }
     .service-card h3 { font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
@@ -134,19 +94,16 @@
     .service-features li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.88rem; color: var(--text); }
     .service-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
 
-    /* ─── ABOUT / CREDIBILITY ─── */
+    /* ABOUT */
     .about { background: var(--white); }
     .about-inner { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-    .about-img-wrap {
-      border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.14);
-      position: relative;
-    }
-    .about-img-wrap img { width: 100%; display: block; object-fit: cover; height: 420px; }
-    .about-img-label {
-      position: absolute; bottom: 16px; left: 16px;
-      background: rgba(27,42,59,0.88); color: white;
-      padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 600;
-    }
+    .about-img-wrap { border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.14); }
+    .about-card { display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%); height: 420px; }
+    .about-card-inner { text-align: center; color: white; padding: 40px; }
+    .about-card-inner .icon { font-size: 5rem; margin-bottom: 16px; }
+    .about-card-inner h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 8px; }
+    .about-card-inner p { font-size: 1rem; opacity: 0.75; }
+    .about-card-inner .tag { margin-top: 20px; font-size: 0.9rem; opacity: 0.6; }
     .about-text h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 800; color: var(--navy); margin-bottom: 16px; line-height: 1.2; }
     .about-text p { font-size: 0.98rem; color: var(--muted); margin-bottom: 16px; line-height: 1.75; }
     .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 24px; }
@@ -154,117 +111,60 @@
     .about-stat strong { display: block; font-size: 2rem; font-weight: 800; color: var(--green); }
     .about-stat span { font-size: 0.82rem; color: var(--muted); }
 
-    /* ─── BEFORE / AFTER GALLERY ─── */
-    .gallery { background: var(--navy); padding: 80px 5%; }
-    .gallery-inner { max-width: 1100px; margin: 0 auto; }
-    .gallery .section-title { color: white; }
-    .gallery .section-sub { color: rgba(255,255,255,0.65); }
-    .gallery .section-label { background: rgba(255,255,255,0.1); color: #74c69d; }
-
-    .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 50px; }
-    .ba-pair { background: rgba(255,255,255,0.05); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
-    .ba-images { display: grid; grid-template-columns: 1fr 1fr; }
-    .ba-img-wrap { position: relative; overflow: hidden; }
-    .ba-img-wrap img { width: 100%; height: 220px; object-fit: cover; display: block; transition: transform 0.4s; }
-    .ba-img-wrap:hover img { transform: scale(1.04); }
-    .ba-label {
-      position: absolute; top: 12px; left: 12px;
-      padding: 4px 12px; border-radius: 99px;
-      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
-    }
-    .ba-label.before { background: #ef4444; color: white; }
-    .ba-label.after { background: var(--green); color: white; }
-    .ba-caption { padding: 18px 20px; }
-    .ba-caption h4 { font-size: 1rem; font-weight: 700; color: white; margin-bottom: 4px; }
-    .ba-caption p { font-size: 0.85rem; color: rgba(255,255,255,0.55); }
-
-    /* Single photo gallery row */
-    .photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 40px; }
-    .photo-strip-item { border-radius: 10px; overflow: hidden; }
-    .photo-strip-item img { width: 100%; height: 180px; object-fit: cover; display: block; transition: transform 0.3s; }
-    .photo-strip-item:hover img { transform: scale(1.05); }
-
-    /* ─── HOW IT WORKS ─── */
+    /* HOW IT WORKS */
     .how-inner { max-width: 960px; margin: 0 auto; }
     .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; position: relative; margin-top: 50px; }
     .steps::before { content: ''; position: absolute; top: 36px; left: 10%; right: 10%; height: 2px; background: var(--green-pale); }
     .step { text-align: center; position: relative; }
-    .step-num {
-      width: 72px; height: 72px; border-radius: 50%; background: var(--green); color: white;
-      display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 800;
-      margin: 0 auto 16px; position: relative; z-index: 1; box-shadow: 0 4px 16px rgba(45,106,79,0.35);
-    }
+    .step-num { width: 72px; height: 72px; border-radius: 50%; background: var(--green); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 800; margin: 0 auto 16px; position: relative; z-index: 1; box-shadow: 0 4px 16px rgba(45,106,79,0.35); }
     .step h4 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
     .step p { font-size: 0.85rem; color: var(--muted); }
 
-    /* ─── FAQ ─── */
+    /* FAQ */
     .faq { background: var(--gray); }
     .faq-inner { max-width: 800px; margin: 0 auto; }
     .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 40px; }
     .faq-item { background: var(--white); border-radius: var(--radius); border: 1.5px solid #e5e7eb; overflow: hidden; }
-    .faq-q {
-      width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center;
-      padding: 20px 22px; font-size: 1rem; font-weight: 600; color: var(--navy);
-      background: none; border: none; cursor: pointer; gap: 16px; transition: background 0.15s;
-    }
+    .faq-q { width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; padding: 20px 22px; font-size: 1rem; font-weight: 600; color: var(--navy); background: none; border: none; cursor: pointer; gap: 16px; transition: background 0.15s; }
     .faq-q:hover { background: var(--gray); }
     .faq-q .arrow { flex-shrink: 0; width: 22px; height: 22px; background: var(--green-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: var(--green); font-weight: 800; transition: transform 0.2s; }
     .faq-item.open .faq-q .arrow { transform: rotate(180deg); }
     .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding: 0 22px; font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
     .faq-item.open .faq-a { max-height: 300px; padding-bottom: 20px; padding-top: 2px; }
 
-    /* ─── CTA BANNER ─── */
+    /* CTA BANNER */
     .cta-banner { background: linear-gradient(135deg, #2d6a4f 0%, #1b2a3b 100%); text-align: center; color: white; padding: 80px 5%; }
     .cta-banner h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; margin-bottom: 14px; }
     .cta-banner p { font-size: 1.1rem; opacity: 0.85; margin-bottom: 36px; }
     .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-    .btn-white {
-      display: inline-block; background: white; color: var(--green);
-      text-decoration: none; padding: 16px 40px; border-radius: var(--radius);
-      font-weight: 700; font-size: 1.05rem; transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
+    .btn-white { display: inline-block; background: white; color: var(--green); text-decoration: none; padding: 16px 40px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
     .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
-    .btn-outline {
-      display: inline-block; background: transparent; color: white;
-      text-decoration: none; padding: 15px 36px; border-radius: var(--radius);
-      font-weight: 700; font-size: 1.05rem; border: 2px solid rgba(255,255,255,0.5);
-      transition: border-color 0.2s, background 0.2s;
-    }
+    .btn-outline { display: inline-block; background: transparent; color: white; text-decoration: none; padding: 15px 36px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; border: 2px solid rgba(255,255,255,0.5); transition: border-color 0.2s, background 0.2s; }
     .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.08); }
 
-    /* ─── FOOTER ─── */
+    /* FOOTER */
     footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 40px 5%; text-align: center; font-size: 0.88rem; }
     footer strong { color: white; }
     footer a { color: rgba(255,255,255,0.65); text-decoration: none; }
     footer a:hover { color: white; }
     .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 14px; }
 
-
-
-    /* ─── RESPONSIVE ─── */
+    /* RESPONSIVE */
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 5% 70px; }
       .form-card { max-width: 500px; }
       .services-grid { grid-template-columns: 1fr; }
       .about-inner { grid-template-columns: 1fr; }
-      .ba-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr 1fr; }
       .steps::before { display: none; }
-      .photo-strip { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 600px) {
-      nav { padding: 0 4%; }
       .nav-phone { display: none; }
       .hero h1 { font-size: 1.9rem; }
       .trust-item { padding: 14px 16px; font-size: 0.82rem; }
       .steps { grid-template-columns: 1fr; }
-      .hero-stats { gap: 20px; }
       section { padding: 60px 4%; }
       .form-card { padding: 28px 20px; }
-      .photo-strip { grid-template-columns: 1fr 1fr; }
-      .ba-images { grid-template-columns: 1fr; }
-      .ba-img-wrap img { height: 180px; }
     }
   </style>
 </head>
@@ -286,22 +186,12 @@
       <h1>Your Backyard.<br><em>Your New ADU.</em></h1>
       <p>Custom stickbuilt, prefab modular, and garage conversion ADUs, built right here in Utah. 50+ homes completed. Get a free estimate with no pressure, no obligation.</p>
       <div class="hero-stats">
-        <div class="stat">
-          <strong>50+</strong>
-          <span>Homes Completed</span>
-        </div>
-        <div class="stat">
-          <strong>3</strong>
-          <span>ADU Types Offered</span>
-        </div>
-        <div class="stat">
-          <strong>100%</strong>
-          <span>Permitted Builds</span>
-        </div>
+        <div class="stat"><strong>50+</strong><span>Homes Completed</span></div>
+        <div class="stat"><strong>3</strong><span>ADU Types Offered</span></div>
+        <div class="stat"><strong>100%</strong><span>Permitted Builds</span></div>
       </div>
     </div>
 
-    <!-- LEAD FORM -->
     <div class="form-card" id="quote">
       <h2>Get Your Free Estimate</h2>
       <p>No cost, no pressure. We'll assess your property and walk you through your options.</p>
@@ -379,7 +269,6 @@
         <p class="section-sub">Whether you want a brand-new build or want to convert what you already have, we have the right solution for your property.</p>
       </div>
       <div class="services-grid">
-
         <div class="service-card">
           <div class="service-icon">🏠</div>
           <h3>Custom Stickbuilt ADU</h3>
@@ -392,20 +281,18 @@
             <li>All materials sourced locally</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">🏗️</div>
           <h3>Prefab / Modular ADU</h3>
           <p>Factory-built and assembled on your lot, the fastest path to a finished, permitted ADU at a lower cost. Built to the same code standards.</p>
           <ul class="service-features">
-            <li>50–70% faster than traditional builds</li>
+            <li>50-70% faster than traditional builds</li>
             <li>Lower labor costs = better value</li>
             <li>High-quality factory construction</li>
             <li>Multiple pre-designed floor plans</li>
             <li>50+ modular homes completed</li>
           </ul>
         </div>
-
         <div class="service-card">
           <div class="service-icon">🚗</div>
           <h3>Garage Conversion ADU</h3>
@@ -418,20 +305,21 @@
             <li>Permitted &amp; inspected from start to finish</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ABOUT / CREDIBILITY -->
+  <!-- ABOUT -->
   <section class="about">
     <div class="about-inner">
-      <div class="about-img-wrap" style="display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%); height:420px;">
-        <div style="text-align:center; color:white; padding:40px;">
-          <div style="font-size:5rem; margin-bottom:16px;">👋</div>
-          <div style="font-size:1.4rem; font-weight:800; margin-bottom:8px;">Sam Lewis</div>
-          <div style="font-size:1rem; opacity:0.75;">Founder, Utah Backyard ADUs</div>
-          <div style="margin-top:20px; font-size:0.9rem; opacity:0.6;">50+ Homes Completed</div>
+      <div class="about-img-wrap">
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="icon">👋</div>
+            <h3>Sam Lewis</h3>
+            <p>Founder, Utah Backyard ADUs</p>
+            <div class="tag">50+ Homes Completed</div>
+          </div>
         </div>
       </div>
       <div class="about-text">
@@ -441,29 +329,17 @@
         <p>I've seen how confusing and overwhelming the ADU process can be for homeowners. My goal is to make it simple: one call, a free visit to your property, and a clear plan from start to move-in day.</p>
         <p>We handle everything: design, permits, construction, and inspections, so you don't have to deal with any of the headaches.</p>
         <div class="about-stats">
-          <div class="about-stat">
-            <strong>50+</strong>
-            <span>Homes Completed</span>
-          </div>
-          <div class="about-stat">
-            <strong>100%</strong>
-            <span>Permitted &amp; Inspected</span>
-          </div>
-          <div class="about-stat">
-            <strong>3</strong>
-            <span>ADU Types Offered</span>
-          </div>
-          <div class="about-stat">
-            <strong>$0</strong>
-            <span>Cost for Your Estimate</span>
-          </div>
+          <div class="about-stat"><strong>50+</strong><span>Homes Completed</span></div>
+          <div class="about-stat"><strong>100%</strong><span>Permitted &amp; Inspected</span></div>
+          <div class="about-stat"><strong>3</strong><span>ADU Types Offered</span></div>
+          <div class="about-stat"><strong>$0</strong><span>Cost for Your Estimate</span></div>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- HOW IT WORKS -->
-  <section>
+  <!-- HOW IT WORKS -->
+  <section style="background: var(--gray);">
     <div class="how-inner">
       <div class="centered">
         <div class="section-label">Simple Process</div>
@@ -504,71 +380,38 @@
         <p class="section-sub" style="margin:0 auto;">Utah ADU laws have changed a lot recently. Here's what most homeowners ask us first.</p>
       </div>
       <div class="faq-list">
-
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Is an ADU legal on my Utah property?
-            <span class="arrow">▼</span>
-          </button>
+          <button class="faq-q" aria-expanded="false">Is an ADU legal on my Utah property?<span class="arrow">▼</span></button>
           <div class="faq-a">Utah state law (HB 82, 2021) requires most cities to allow ADUs on single-family lots. Salt Lake City, Provo, Ogden, St. George, and most other Utah cities now permit ADUs by right. We'll confirm your specific zoning during your free site visit, at no charge.</div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            How do I get an estimate? Is it really free?
-            <span class="arrow">▼</span>
-          </button>
-          <div class="faq-a">100% free, no strings attached. Just fill out the form on this page or give us a call at (801) 960-0103. We'll schedule a time to visit your property, walk through your options, and give you a clear picture of what's possible and what it involves. You decide what happens next.</div>
+          <button class="faq-q" aria-expanded="false">How do I get an estimate? Is it really free?<span class="arrow">▼</span></button>
+          <div class="faq-a">100% free, no strings attached. Just fill out the form on this page or give us a call at (801) 960-0103. We'll schedule a time to visit your property, walk through your options, and give you a clear picture of what's possible. You decide what happens next.</div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            What's the difference between stickbuilt, modular, and a garage conversion?
-            <span class="arrow">▼</span>
-          </button>
-          <div class="faq-a">A stickbuilt ADU is built on-site from scratch: maximum customization, best long-term value. A modular ADU is built in a factory and assembled on your lot, faster and often more affordable. A garage conversion turns your existing detached or attached garage into a fully livable, permitted unit. Typically the most cost-effective option if you already have a usable garage.</div>
+          <button class="faq-q" aria-expanded="false">What's the difference between stickbuilt, modular, and a garage conversion?<span class="arrow">▼</span></button>
+          <div class="faq-a">A stickbuilt ADU is built on-site from scratch: maximum customization, best long-term value. A modular ADU is built in a factory and assembled on your lot, faster and often more affordable. A garage conversion turns your existing garage into a fully livable, permitted unit, typically the most cost-effective option if you already have a usable garage.</div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Can I rent out my ADU for extra income?
-            <span class="arrow">▼</span>
-          </button>
+          <button class="faq-q" aria-expanded="false">Can I rent out my ADU for extra income?<span class="arrow">▼</span></button>
           <div class="faq-a">Yes, many of our clients build ADUs specifically to generate rental income. Long-term rentals are allowed anywhere ADUs are permitted in Utah. Short-term rentals (Airbnb, VRBO) depend on your city's specific rules. We can help you understand what's allowed in your area during your free consultation.</div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            How long does it take to build an ADU?
-            <span class="arrow">▼</span>
-          </button>
-          <div class="faq-a">Garage conversions can be completed in as little as 2–3 months. Modular ADUs typically take 3–5 months from permit approval. Custom stickbuilt ADUs usually run 5–8 months. Permitting timelines vary by city (usually 4–10 weeks) and we manage all of that for you.</div>
+          <button class="faq-q" aria-expanded="false">How long does it take to build an ADU?<span class="arrow">▼</span></button>
+          <div class="faq-a">Garage conversions can be completed in as little as 2-3 months. Modular ADUs typically take 3-5 months from permit approval. Custom stickbuilt ADUs usually run 5-8 months. Permitting timelines vary by city (usually 4-10 weeks) and we manage all of that for you.</div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Do I need to live on the property?
-            <span class="arrow">▼</span>
-          </button>
+          <button class="faq-q" aria-expanded="false">Do I need to live on the property?<span class="arrow">▼</span></button>
           <div class="faq-a">Utah's ADU law removed the owner-occupancy requirement statewide in 2021. You don't have to live on the property to build or rent an ADU. Some cities may still have their own local rules. We'll confirm this for your specific city as part of your free estimate.</div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Do you handle permits and inspections?
-            <span class="arrow">▼</span>
-          </button>
+          <button class="faq-q" aria-expanded="false">Do you handle permits and inspections?<span class="arrow">▼</span></button>
           <div class="faq-a">Absolutely, that's one of the biggest things we do for you. We handle architectural plans, permit applications, utility hookups, all required inspections, and the final certificate of occupancy. You won't have to deal with city hall at all.</div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Can you convert my garage even if it's attached to the house?
-            <span class="arrow">▼</span>
-          </button>
+          <button class="faq-q" aria-expanded="false">Can you convert my garage even if it's attached to the house?<span class="arrow">▼</span></button>
           <div class="faq-a">Yes, both attached and detached garages can often be converted into legal ADUs. We'll assess your garage's size, structure, and zoning situation during your free site visit to confirm feasibility and walk you through what the conversion would involve.</div>
         </div>
-
       </div>
     </div>
   </section>
@@ -607,10 +450,22 @@
       });
     });
 
-    // Form submission
-    // Replace the fetch URL with Formspree: https://formspree.io/f/YOUR_FORM_ID
-    document.getElementById('leadForm').addEventListener('submit', function(e) {
+    // Smooth scroll
+    document.querySelectorAll('a[href="#quote"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Form submission via Formspree
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
       e.preventDefault();
+      const form = this;
+      const btn = form.querySelector('.submit-btn');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
       const data = {
         name: document.getElementById('name').value,
         phone: document.getElementById('phone').value,
@@ -619,19 +474,24 @@
         type: document.getElementById('type').value,
         message: document.getElementById('message').value,
       };
-      console.log('Lead:', data);
-      // TODO: Connect to Formspree or your backend:
-      // fetch('https://formspree.io/f/YOUR_ID', { method:'POST', body: JSON.stringify(data), headers:{'Content-Type':'application/json'} })
-      this.style.display = 'none';
-      document.getElementById('successMsg').style.display = 'block';
-    });
 
-    // Smooth scroll
-    document.querySelectorAll('a[href="#quote"]').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
-      });
+      try {
+        const res = await fetch('https://formspree.io/f/xgorerne', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('successMsg').style.display = 'block';
+        } else {
+          btn.textContent = 'Something went wrong — please call (801) 960-0103';
+          btn.disabled = false;
+        }
+      } catch(err) {
+        btn.textContent = 'Error — please call us at (801) 960-0103';
+        btn.disabled = false;
+      }
     });
   </script>
 </body>
