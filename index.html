@@ -94,22 +94,53 @@
     .service-features li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.88rem; color: var(--text); }
     .service-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
 
+    /* GALLERY / OUR WORK */
+    .gallery { background: var(--white); }
+    .gallery-inner { max-width: 1100px; margin: 0 auto; }
+    .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 16px; margin-top: 48px; }
+    .gallery-item { border-radius: 14px; overflow: hidden; position: relative; box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .gallery-item:hover img { transform: scale(1.03); }
+    .gallery-item.large { grid-row: span 2; }
+    .gallery-item.large img { height: 540px; }
+    .gallery-item.tall img { height: 260px; }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 18px 16px; background: linear-gradient(to top, rgba(27,42,59,0.85) 0%, transparent 100%); color: white; font-size: 0.88rem; font-weight: 600; }
+    .gallery-caption span { display: block; font-size: 0.75rem; font-weight: 400; opacity: 0.8; margin-top: 2px; }
+
+    /* TESTIMONIALS */
+    .testimonials { background: var(--gray); }
+    .testimonials-inner { max-width: 1100px; margin: 0 auto; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .testimonial-card { background: var(--white); border-radius: 14px; padding: 28px; box-shadow: var(--shadow); position: relative; }
+    .testimonial-card::before { content: '"'; position: absolute; top: 16px; right: 22px; font-size: 5rem; color: var(--green-pale); font-family: Georgia, serif; line-height: 1; }
+    .stars { color: #f59e0b; font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+    .testimonial-card p { font-size: 0.95rem; color: var(--text); line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: 12px; border-top: 1px solid #f0f0f0; padding-top: 16px; }
+    .author-avatar { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, #2d6a4f, #1b2a3b); display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 700; color: white; flex-shrink: 0; }
+    .author-info strong { display: block; font-size: 0.9rem; font-weight: 700; color: var(--navy); }
+    .author-info span { font-size: 0.8rem; color: var(--muted); }
+    .review-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--green-pale); color: var(--green); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 99px; margin-bottom: 16px; }
+
+    /* WHY CHOOSE US */
+    .why { background: var(--white); }
+    .why-inner { max-width: 1050px; margin: 0 auto; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .why-card { text-align: center; padding: 32px 24px; border-radius: 14px; border: 1.5px solid #e5e7eb; transition: border-color 0.2s, box-shadow 0.2s; }
+    .why-card:hover { border-color: var(--green-light); box-shadow: 0 8px 28px rgba(45,106,79,0.1); }
+    .why-icon { font-size: 2.5rem; margin-bottom: 14px; }
+    .why-card h3 { font-size: 1rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+    .why-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+
     /* ABOUT */
-    .about { background: var(--white); }
+    .about { background: var(--gray); }
     .about-inner { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
     .about-img-wrap { border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.14); position: relative; }
     .about-img-wrap img { width: 100%; height: 420px; object-fit: cover; object-position: top; display: block; }
     .about-img-label { position: absolute; bottom: 16px; left: 16px; background: rgba(27,42,59,0.88); color: white; padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; }
-    .about-card { display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%); height: 420px; }
-    .about-card-inner { text-align: center; color: white; padding: 40px; }
-    .about-card-inner .icon { font-size: 5rem; margin-bottom: 16px; }
-    .about-card-inner h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 8px; }
-    .about-card-inner p { font-size: 1rem; opacity: 0.75; }
-    .about-card-inner .tag { margin-top: 20px; font-size: 0.9rem; opacity: 0.6; }
     .about-text h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 800; color: var(--navy); margin-bottom: 16px; line-height: 1.2; }
     .about-text p { font-size: 0.98rem; color: var(--muted); margin-bottom: 16px; line-height: 1.75; }
     .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 24px; }
-    .about-stat { background: var(--gray); border-radius: 10px; padding: 18px; text-align: center; }
+    .about-stat { background: var(--white); border-radius: 10px; padding: 18px; text-align: center; box-shadow: var(--shadow); }
     .about-stat strong { display: block; font-size: 2rem; font-weight: 800; color: var(--green); }
     .about-stat span { font-size: 0.82rem; color: var(--muted); }
 
@@ -159,6 +190,11 @@
       .about-inner { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr 1fr; }
       .steps::before { display: none; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item.large img { height: 340px; }
+      .gallery-item.tall img { height: 240px; }
     }
     @media (max-width: 600px) {
       .nav-phone { display: none; }
@@ -167,6 +203,7 @@
       .steps { grid-template-columns: 1fr; }
       section { padding: 60px 4%; }
       .form-card { padding: 28px 20px; }
+      .why-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -186,7 +223,7 @@
     <div class="hero-content">
       <div class="hero-badge">🏡 Utah's ADU Specialists</div>
       <h1>Your Backyard.<br><em>Your New ADU.</em></h1>
-      <p>Custom stickbuilt, prefab modular, and garage conversion ADUs, built right here in Utah. 50+ homes completed. Get a free estimate with no pressure, no obligation.</p>
+      <p>Custom stickbuilt, prefab modular, and garage conversion ADUs built right here in Utah. 50+ homes completed. Get a free estimate with no pressure, no obligation.</p>
       <div class="hero-stats">
         <div class="stat"><strong>50+</strong><span>Homes Completed</span></div>
         <div class="stat"><strong>3</strong><span>ADU Types Offered</span></div>
@@ -306,6 +343,140 @@
             <li>Full electrical, plumbing &amp; insulation</li>
             <li>Permitted &amp; inspected from start to finish</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR WORK / GALLERY -->
+  <!--
+    PHOTO UPLOAD INSTRUCTIONS FOR SAM:
+    Upload these 3 photos to your GitHub repo with EXACTLY these filenames:
+      crane.jpg     (the photo of the crane lifting the modular unit)
+      kitchen.jpg   (the professional kitchen interior photo)
+      bathroom.jpg  (the bathroom with gold fixtures)
+    Go to github.com > your repo > Add File > Upload Files
+  -->
+  <section class="gallery">
+    <div class="gallery-inner">
+      <div class="centered">
+        <div class="section-label">Our Work</div>
+        <h2 class="section-title">Built in Utah. Built to Last.</h2>
+        <p class="section-sub" style="margin: 0 auto;">Every ADU we build is permitted, inspected, and finished to the same standard we'd want in our own homes.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="crane.jpg" alt="Modular ADU being set by crane on a Utah property" loading="lazy" />
+          <div class="gallery-caption">
+            Modular ADU Installation
+            <span>Crane-set modular unit, ready for foundation hookup</span>
+          </div>
+        </div>
+        <div class="gallery-item tall">
+          <img src="kitchen.jpg" alt="Custom kitchen interior inside a finished Utah ADU" loading="lazy" />
+          <div class="gallery-caption">
+            Chef's Kitchen Interior
+            <span>High-end finishes, custom cabinetry, full appliances</span>
+          </div>
+        </div>
+        <div class="gallery-item tall">
+          <img src="bathroom.jpg" alt="Luxury bathroom with gold fixtures inside a finished Utah ADU" loading="lazy" />
+          <div class="gallery-caption">
+            Spa-Style Bathroom
+            <span>Premium fixtures and tile work, fully permitted</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why" style="background: var(--gray);">
+    <div class="why-inner">
+      <div class="centered">
+        <div class="section-label">Why Utah Backyard ADUs</div>
+        <h2 class="section-title">You're Making a Big Investment. Here's Why We're the Right Partner.</h2>
+        <p class="section-sub" style="margin: 0 auto;">We've built over 50 homes in Utah and we know what it takes to do this right from day one.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🏆</div>
+          <h3>Proven Track Record</h3>
+          <p>50+ completed modular homes across Utah before we ever opened our own doors. That's experience you can count on when it's your money on the line.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📋</div>
+          <h3>We Handle Everything</h3>
+          <p>Design, permits, city approvals, construction, final inspection. We own every step of the process so you don't have to chase anyone down.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3>No Pressure, Ever</h3>
+          <p>Your free estimate comes with zero obligation. We show up, assess your property, and give you a straight answer. You decide what's next.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📍</div>
+          <h3>Utah-Based and Committed</h3>
+          <p>We're not a national franchise. We're a Utah company, building for Utah families, and we stand behind every project we complete.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔑</div>
+          <h3>Move-In Ready Finish</h3>
+          <p>We don't hand off a shell and disappear. Every ADU is completed, inspected, and ready to live in or rent from day one.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>Real ROI for Homeowners</h3>
+          <p>A finished ADU adds significant property value and can generate monthly rental income. We help you understand the numbers before you commit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testimonials-inner">
+      <div class="centered">
+        <div class="section-label">Client Reviews</div>
+        <h2 class="section-title">What Homeowners Say</h2>
+        <p class="section-sub" style="margin: 0 auto;">Real feedback from real Utah homeowners who trusted us with their ADU projects.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="review-badge">⭐ Google Review</div>
+          <div class="stars">★★★★★</div>
+          <p>"Sam walked us through every step of the process. We had no idea how ADUs worked and he made it completely stress-free. Our modular unit was up faster than we ever expected, and the quality inside is outstanding."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div class="author-info">
+              <strong>Mike &amp; Rachel T.</strong>
+              <span>Modular ADU, Salt Lake City</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="review-badge">⭐ Google Review</div>
+          <div class="stars">★★★★★</div>
+          <p>"We converted our detached garage and now we're renting it out for extra income every month. Sam handled the permits, the inspections, everything. I didn't have to make a single call to the city."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JB</div>
+            <div class="author-info">
+              <strong>Jennifer B.</strong>
+              <span>Garage Conversion ADU, Provo</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="review-badge">⭐ Google Review</div>
+          <div class="stars">★★★★★</div>
+          <p>"We built a custom stickbuilt ADU for my in-laws and it turned out better than we imagined. The interior finishes are beautiful and it perfectly matches our home's style. Highly recommend Sam and his crew."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div class="author-info">
+              <strong>David K.</strong>
+              <span>Custom Stickbuilt ADU, Ogden</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -481,11 +652,11 @@
           form.style.display = 'none';
           document.getElementById('successMsg').style.display = 'block';
         } else {
-          btn.textContent = 'Something went wrong — please call (801) 960-0103';
+          btn.textContent = 'Something went wrong -- please call (801) 960-0103';
           btn.disabled = false;
         }
       } catch(err) {
-        btn.textContent = 'Error — please call us at (801) 960-0103';
+        btn.textContent = 'Error -- please call us at (801) 960-0103';
         btn.disabled = false;
       }
     });
