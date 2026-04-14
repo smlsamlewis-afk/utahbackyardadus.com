@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Utah Backyard ADUs</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #2d6a4f;
+      --green-light: #40916c;
+      --green-pale: #d8f3dc;
+      --navy: #1b2a3b;
+      --white: #ffffff;
+      --muted: #6b7280;
+    }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--white); color: var(--navy); min-height: 100vh; display: flex; flex-direction: column; }
+    nav {
+      background: var(--white); border-bottom: 1px solid #e5e7eb;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+    }
+    .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--green); text-decoration: none; }
+    .nav-logo span { color: var(--navy); }
+    .main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 60px 5%; }
+    .card {
+      max-width: 580px; width: 100%; text-align: center;
+      background: var(--white); border-radius: 20px;
+      padding: 60px 48px; box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+      border-top: 5px solid var(--green);
+    }
+    .check { font-size: 4rem; margin-bottom: 20px; }
+    h1 { font-size: 2rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; line-height: 1.2; }
+    .sub { font-size: 1.05rem; color: var(--muted); line-height: 1.7; margin-bottom: 32px; }
+    .what-next { background: var(--green-pale); border-radius: 12px; padding: 24px; text-align: left; margin-bottom: 32px; }
+    .what-next h3 { font-size: 0.88rem; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 14px; }
+    .what-next ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .what-next li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.93rem; color: var(--navy); }
+    .what-next li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .call-block { border: 1.5px solid #e5e7eb; border-radius: 12px; padding: 20px; margin-bottom: 28px; }
+    .call-block p { font-size: 0.88rem; color: var(--muted); margin-bottom: 8px; }
+    .call-link { font-size: 1.3rem; font-weight: 800; color: var(--green); text-decoration: none; }
+    .call-link:hover { color: var(--green-light); }
+    .back-link { display: inline-block; font-size: 0.9rem; color: var(--muted); text-decoration: none; }
+    .back-link:hover { color: var(--navy); }
+    footer { background: var(--navy); color: rgba(255,255,255,0.55); padding: 24px 5%; text-align: center; font-size: 0.82rem; }
+    footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
+    @media (max-width: 600px) {
+      .card { padding: 40px 24px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/"><span>Utah</span>BackyardADUs.com</a>
+  </nav>
+
+  <div class="main">
+    <div class="card">
+      <div class="check">✅</div>
+      <h1>We Got Your Request!</h1>
+      <p class="sub">Thank you for reaching out. We'll be in touch within 1 business day to schedule your free property visit.</p>
+
+      <div class="what-next">
+        <h3>What Happens Next</h3>
+        <ul>
+          <li>Sam will personally review your request and reach out within 1 business day</li>
+          <li>We'll schedule a free site visit at a time that works for you</li>
+          <li>We'll walk your property, answer your questions, and give you a clear picture of your options</li>
+          <li>Zero pressure, zero obligation</li>
+        </ul>
+      </div>
+
+      <div class="call-block">
+        <p>Need to talk sooner? Call or text us directly:</p>
+        <a class="call-link" href="tel:8019600103">📞 (801) 960-0103</a>
+      </div>
+
+      <a class="back-link" href="/">Back to utahbackyardadus.com</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Utah Backyard ADUs | Licensed Utah General Contractor</p>
+  </footer>
+
+</body>
+</html>

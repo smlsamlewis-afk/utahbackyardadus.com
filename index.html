@@ -682,8 +682,7 @@
           body: JSON.stringify(data)
         });
         if (res.ok) {
-          form.style.display = 'none';
-          document.getElementById('successMsg').style.display = 'block';
+          window.location.href = '/thank-you.html';
         } else {
           btn.textContent = 'Something went wrong -- please call (801) 960-0103';
           btn.disabled = false;
