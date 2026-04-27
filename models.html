@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADU Models | Utah Backyard ADUs</title>
+  <meta name="description" content="Browse our ADU floor plans. Studio, 1 bedroom, and 2 bedroom models available. Custom stickbuilt and modular options. Free estimates in Utah." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18090287887');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #2d6a4f;
+      --green-light: #40916c;
+      --green-pale: #d8f3dc;
+      --navy: #1b2a3b;
+      --gray: #f7f8fa;
+      --text: #1e2a38;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.09);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--white); border-bottom: 1px solid #e5e7eb;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+    }
+    .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--green); text-decoration: none; }
+    .nav-logo span { color: var(--navy); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { text-decoration: none; color: var(--navy); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--green); }
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .nav-phone { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.95rem; }
+    .nav-phone:hover { color: var(--green); }
+    .nav-cta { background: var(--green); color: var(--white); text-decoration: none; padding: 10px 22px; border-radius: var(--radius); font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--green-light); }
+
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%); padding: 60px 5%; color: white; text-align: center; }
+    .page-hero .badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #d8f3dc; padding: 5px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 16px; text-transform: uppercase; }
+    .page-hero h1 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; margin-bottom: 14px; }
+    .page-hero p { font-size: 1.05rem; opacity: 0.85; max-width: 600px; margin: 0 auto; }
+
+    /* MODELS */
+    .models-section { padding: 80px 5%; background: var(--gray); }
+    .models-inner { max-width: 1100px; margin: 0 auto; }
+    .models-grid { display: flex; flex-direction: column; gap: 60px; margin-top: 50px; }
+
+    /* MODEL CARD */
+    .model-card { background: var(--white); border-radius: 18px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.1); display: grid; grid-template-columns: 1fr 1fr; }
+    .model-card.reverse { direction: rtl; }
+    .model-card.reverse > * { direction: ltr; }
+    .model-images { position: relative; min-height: 420px; }
+    .model-main-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .model-tag { position: absolute; top: 18px; left: 18px; background: var(--green); color: white; font-size: 0.78rem; font-weight: 700; padding: 6px 14px; border-radius: 99px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .model-info { padding: 48px 44px; display: flex; flex-direction: column; justify-content: center; }
+    .model-name { font-size: clamp(1.4rem, 2vw, 1.8rem); font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .model-sqft { font-size: 0.88rem; font-weight: 600; color: var(--green); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 18px; }
+    .model-specs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+    .spec-box { background: var(--gray); border-radius: 10px; padding: 14px; text-align: center; }
+    .spec-box strong { display: block; font-size: 1.3rem; font-weight: 800; color: var(--navy); }
+    .spec-box span { font-size: 0.75rem; color: var(--muted); }
+    .model-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.75; margin-bottom: 24px; }
+    .model-features { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }
+    .model-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--text); }
+    .model-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    .model-cta { display: inline-block; background: var(--green); color: white; text-decoration: none; padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 0.95rem; transition: background 0.2s; align-self: flex-start; }
+    .model-cta:hover { background: var(--green-light); }
+
+    /* FLOOR PLAN TABS */
+    .floorplan-section { padding: 16px 0 0; border-top: 1px solid #f0f0f0; margin-top: 24px; }
+    .floorplan-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px; }
+    .floorplan-thumbs { display: flex; gap: 10px; }
+    .floorplan-thumb { width: 80px; height: 60px; object-fit: cover; border-radius: 6px; border: 2px solid #e5e7eb; cursor: pointer; transition: border-color 0.2s; }
+    .floorplan-thumb:hover { border-color: var(--green); }
+
+    /* CTA BANNER */
+    .cta-banner { background: linear-gradient(135deg, #2d6a4f 0%, #1b2a3b 100%); text-align: center; color: white; padding: 80px 5%; }
+    .cta-banner h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; margin-bottom: 14px; }
+    .cta-banner p { font-size: 1.05rem; opacity: 0.85; margin-bottom: 36px; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-white { display: inline-block; background: white; color: var(--green); text-decoration: none; padding: 16px 40px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+    .btn-outline { display: inline-block; background: transparent; color: white; text-decoration: none; padding: 15px 36px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; border: 2px solid rgba(255,255,255,0.5); transition: border-color 0.2s, background 0.2s; }
+    .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.08); }
+
+    /* FOOTER */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 40px 5%; text-align: center; font-size: 0.88rem; }
+    footer strong { color: white; }
+    footer a { color: rgba(255,255,255,0.65); text-decoration: none; }
+    footer a:hover { color: white; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 14px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .model-card, .model-card.reverse { grid-template-columns: 1fr; direction: ltr; }
+      .model-images { min-height: 300px; }
+      .model-info { padding: 32px 28px; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 600px) {
+      .nav-phone { display: none; }
+      .model-specs { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html"><span>Utah</span>BackyardADUs.com</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="models.html" class="active">Models</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:8019600103">📞 (801) 960-0103</a>
+      <a class="nav-cta" href="contact.html">Free Estimate</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="badge">Our ADU Models</div>
+    <h1>Find the Right ADU for Your Property</h1>
+    <p>Browse our available floor plans. Each model is fully permitted, move-in ready, and can be built on your lot. Get a free estimate to see what fits your space.</p>
+  </div>
+
+  <!-- MODELS -->
+  <section class="models-section">
+    <div class="models-inner">
+      <div class="models-grid">
+
+        <!-- MODEL 1: The Ridgeline - Modern with Garage 560 sqft -->
+        <div class="model-card">
+          <div class="model-images">
+            <img class="model-main-img" src="model1.jpg" alt="The Ridgeline ADU - Modern unit with garage" />
+            <div class="model-tag">Most Popular</div>
+          </div>
+          <div class="model-info">
+            <div class="model-name">The Ridgeline</div>
+            <div class="model-sqft">560 sq ft total | Modern Shed Roof</div>
+            <div class="model-specs">
+              <div class="spec-box"><strong>1</strong><span>Bedroom</span></div>
+              <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
+              <div class="spec-box"><strong>560</strong><span>Total sq ft</span></div>
+            </div>
+            <p class="model-desc">A modern, clean-lined ADU with an attached garage, covered porch, and open interior. The shed roofline gives it a contemporary look that stands out while blending naturally into most neighborhoods. Perfect for rental income or a guest suite with parking.</p>
+            <ul class="model-features">
+              <li>467.5 sq ft livable space plus 92.5 sq ft patio</li>
+              <li>Attached single-car garage included</li>
+              <li>Covered front porch with railing</li>
+              <li>Open concept kitchen and living area</li>
+              <li>Modern shed roof exterior design</li>
+              <li>Available in stickbuilt or modular</li>
+            </ul>
+            <a href="contact.html" class="model-cta">Get a Free Estimate</a>
+          </div>
+        </div>
+
+        <!-- MODEL 2: The Cottonwood - 1 Bed 594 sqft -->
+        <div class="model-card reverse">
+          <div class="model-images">
+            <img class="model-main-img" src="model2.jpg" alt="The Cottonwood ADU - 1 bedroom 594 sq ft" />
+            <div class="model-tag">Great for Rentals</div>
+          </div>
+          <div class="model-info">
+            <div class="model-name">The Cottonwood</div>
+            <div class="model-sqft">594 sq ft | 1 Bedroom</div>
+            <div class="model-specs">
+              <div class="spec-box"><strong>1</strong><span>Bedroom</span></div>
+              <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
+              <div class="spec-box"><strong>594</strong><span>Sq ft</span></div>
+            </div>
+            <p class="model-desc">An efficient, well-designed 1-bedroom ADU with a separate bedroom, full bath, dedicated kitchen, and spacious living area. Includes an office nook — ideal for remote workers or students. A top choice for long-term rental income in Salt Lake City and Park City.</p>
+            <ul class="model-features">
+              <li>594 sq ft fully livable space</li>
+              <li>Separate bedroom with closet</li>
+              <li>Dedicated office nook</li>
+              <li>Full kitchen and living room</li>
+              <li>Modern exterior in gray and wood tones</li>
+              <li>Available in stickbuilt or modular</li>
+            </ul>
+            <a href="contact.html" class="model-cta">Get a Free Estimate</a>
+          </div>
+        </div>
+
+        <!-- MODEL 3: The Park City - 2 Bed 960 sqft -->
+        <div class="model-card">
+          <div class="model-images">
+            <img class="model-main-img" src="model3.jpg" alt="The Park City ADU - 2 bedroom 960 sq ft" />
+            <div class="model-tag">Best Value</div>
+          </div>
+          <div class="model-info">
+            <div class="model-name">The Park City</div>
+            <div class="model-sqft">960 sq ft total | 2 Bedroom</div>
+            <div class="model-specs">
+              <div class="spec-box"><strong>2</strong><span>Bedrooms</span></div>
+              <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
+              <div class="spec-box"><strong>960</strong><span>Total sq ft</span></div>
+            </div>
+            <p class="model-desc">Our largest model, designed for families, extended stays, or maximum rental income. Features two full bedrooms, a spacious living and dining area, a full kitchen, back porch, and entry porch. The stone and wood exterior gives it a premium, high-end look.</p>
+            <ul class="model-features">
+              <li>884.5 sq ft livable plus 75 sq ft of porches</li>
+              <li>Two full bedrooms</li>
+              <li>Open dining and living room</li>
+              <li>Back porch and entry porch</li>
+              <li>Stone and wood accent exterior</li>
+              <li>Highest rental income potential</li>
+            </ul>
+            <a href="contact.html" class="model-cta">Get a Free Estimate</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <h2>Not Sure Which Model Fits Your Lot?</h2>
+    <p>We'll come to your property, assess your space, and recommend the best fit. Free visit, no obligation.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-white">Request Free Estimate</a>
+      <a href="tel:8019600103" class="btn-outline">📞 Call (801) 960-0103</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:8019600103">(801) 960-0103</a>
+      <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
+    </div>
+    <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
+    <p style="margin-top:6px;">Serving Salt Lake City, Provo, Ogden, St. George &amp; all of Utah</p>
+    <p style="margin-top:8px;">© 2026 UtahBackyardADUs.com | Licensed Utah General Contractor</p>
+  </footer>
+
+</body>
+</html>

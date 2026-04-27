@@ -39,6 +39,9 @@
     }
     .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--green); text-decoration: none; }
     .nav-logo span { color: var(--navy); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { text-decoration: none; color: var(--navy); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--green); }
     .nav-right { display: flex; align-items: center; gap: 20px; }
     .nav-phone { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.95rem; }
     .nav-phone:hover { color: var(--green); }
@@ -237,10 +240,15 @@
 
   <!-- NAV -->
   <nav>
-    <a class="nav-logo" href="#"><span>Utah</span>BackyardADUs.com</a>
+    <a class="nav-logo" href="index.html"><span>Utah</span>BackyardADUs.com</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html">Contact</a>
+    </div>
     <div class="nav-right">
       <a class="nav-phone" href="tel:8019600103">📞 (801) 960-0103</a>
-      <a class="nav-cta" href="#quote">Free Estimate</a>
+      <a class="nav-cta" href="contact.html">Free Estimate</a>
     </div>
   </nav>
 
@@ -630,7 +638,7 @@
     <h2>Ready to Get Started?</h2>
     <p>One call is all it takes. We'll come to you, assess your property, and walk you through your options, completely free.</p>
     <div class="cta-buttons">
-      <a href="#quote" class="btn-white">Request Free Estimate →</a>
+      <a href="contact.html" class="btn-white">Request Free Estimate →</a>
       <a href="tel:8019600103" class="btn-outline">📞 Call (801) 960-0103</a>
     </div>
   </section>
@@ -638,7 +646,9 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-links">
-      <a href="#quote">Get Free Estimate</a>
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html">Contact</a>
       <a href="tel:8019600103">(801) 960-0103</a>
       <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
     </div>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Estimate | Utah Backyard ADUs</title>
+  <meta name="description" content="Get a free ADU estimate in Utah. We come to your property and walk you through your options. No pressure, no obligation. Call 801-960-0103." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18090287887');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #2d6a4f;
+      --green-light: #40916c;
+      --green-pale: #d8f3dc;
+      --navy: #1b2a3b;
+      --gray: #f7f8fa;
+      --text: #1e2a38;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.09);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--white); border-bottom: 1px solid #e5e7eb;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+    }
+    .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--green); text-decoration: none; }
+    .nav-logo span { color: var(--navy); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { text-decoration: none; color: var(--navy); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--green); }
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .nav-phone { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.95rem; }
+    .nav-phone:hover { color: var(--green); }
+    .nav-cta { background: var(--green); color: var(--white); text-decoration: none; padding: 10px 22px; border-radius: var(--radius); font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--green-light); }
+
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%); padding: 60px 5%; color: white; text-align: center; }
+    .page-hero .badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #d8f3dc; padding: 5px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 16px; text-transform: uppercase; }
+    .page-hero h1 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; margin-bottom: 14px; }
+    .page-hero p { font-size: 1.05rem; opacity: 0.85; max-width: 600px; margin: 0 auto; }
+
+    /* CONTACT LAYOUT */
+    .contact-section { padding: 80px 5%; background: var(--gray); }
+    .contact-inner { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: start; }
+
+    /* INFO SIDE */
+    .contact-info h2 { font-size: 1.6rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+    .contact-info p { font-size: 0.97rem; color: var(--muted); line-height: 1.75; margin-bottom: 28px; }
+    .contact-methods { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+    .contact-method { display: flex; align-items: center; gap: 16px; background: var(--white); border-radius: 12px; padding: 18px 22px; box-shadow: var(--shadow); text-decoration: none; color: var(--text); transition: transform 0.2s; }
+    .contact-method:hover { transform: translateY(-2px); }
+    .contact-method-icon { width: 46px; height: 46px; border-radius: 50%; background: var(--green-pale); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+    .contact-method-text strong { display: block; font-size: 0.95rem; font-weight: 700; color: var(--navy); }
+    .contact-method-text span { font-size: 0.85rem; color: var(--muted); }
+
+    /* HOW IT WORKS */
+    .how-title { font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-bottom: 18px; }
+    .steps-list { display: flex; flex-direction: column; gap: 16px; }
+    .step-item { display: flex; align-items: flex-start; gap: 16px; }
+    .step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--green); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 800; flex-shrink: 0; }
+    .step-text strong { display: block; font-size: 0.92rem; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+    .step-text span { font-size: 0.85rem; color: var(--muted); }
+
+    /* FORM CARD */
+    .form-card { background: var(--white); border-radius: 16px; padding: 36px 32px; box-shadow: 0 12px 48px rgba(0,0,0,0.12); }
+    .form-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; color: var(--navy); }
+    .form-card > p { font-size: 0.88rem; color: var(--muted); margin-bottom: 22px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 5px; color: var(--navy); }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 11px 14px; border: 1.5px solid #d1d5db; border-radius: 8px; font-size: 0.95rem; color: var(--text); background: #f9fafb; transition: border 0.2s; font-family: inherit; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--green); background: var(--white); }
+    .form-group textarea { resize: vertical; min-height: 85px; }
+    .submit-btn { width: 100%; padding: 14px; background: var(--green); color: var(--white); border: none; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 4px; }
+    .submit-btn:hover { background: var(--green-light); }
+    .submit-btn:disabled { background: var(--muted); cursor: not-allowed; }
+    .form-note { text-align: center; font-size: 0.78rem; color: var(--muted); margin-top: 10px; }
+    .success-msg { display: none; text-align: center; padding: 24px; background: var(--green-pale); border-radius: 10px; color: var(--green); font-weight: 600; }
+    .success-msg strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+
+    /* FOOTER */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 40px 5%; text-align: center; font-size: 0.88rem; }
+    footer strong { color: white; }
+    footer a { color: rgba(255,255,255,0.65); text-decoration: none; }
+    footer a:hover { color: white; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 14px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .contact-inner { grid-template-columns: 1fr; }
+      .form-card { max-width: 500px; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 600px) {
+      .nav-phone { display: none; }
+      .form-card { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html"><span>Utah</span>BackyardADUs.com</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:8019600103">📞 (801) 960-0103</a>
+      <a class="nav-cta" href="contact.html">Free Estimate</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="badge">Free Estimates</div>
+    <h1>Get Your Free Property Assessment</h1>
+    <p>Fill out the form and we'll reach out within 1 business day to schedule a free visit to your property. No pressure, no obligation.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-inner">
+
+      <!-- LEFT: Info -->
+      <div class="contact-info">
+        <h2>We'd Love to Hear from You</h2>
+        <p>Whether you have a specific model in mind or you're just exploring your options, we're here to help. One call or form submission gets the conversation started.</p>
+
+        <div class="contact-methods">
+          <a href="tel:8019600103" class="contact-method">
+            <div class="contact-method-icon">📞</div>
+            <div class="contact-method-text">
+              <strong>(801) 960-0103</strong>
+              <span>Call or text Sam directly</span>
+            </div>
+          </a>
+          <a href="mailto:smlsamlewis@gmail.com" class="contact-method">
+            <div class="contact-method-icon">✉️</div>
+            <div class="contact-method-text">
+              <strong>smlsamlewis@gmail.com</strong>
+              <span>Email us anytime</span>
+            </div>
+          </a>
+          <div class="contact-method">
+            <div class="contact-method-icon">📍</div>
+            <div class="contact-method-text">
+              <strong>Serving All of Utah</strong>
+              <span>Salt Lake City, Park City, Provo, Ogden and more</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="how-title">What Happens After You Reach Out</div>
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <strong>We contact you within 1 business day</strong>
+              <span>Sam personally reviews every inquiry and reaches out to schedule your visit</span>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <strong>Free site visit at your property</strong>
+              <span>We assess your lot, discuss your goals, and recommend the right model or custom build</span>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <strong>Clear estimate, no pressure</strong>
+              <span>You get a straight answer on cost and timeline. You decide what happens next</span>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-text">
+              <strong>We handle everything if you proceed</strong>
+              <span>Design, permits, construction, and final inspection. All managed for you</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="form-card" id="quote">
+        <h2>Request Your Free Estimate</h2>
+        <p>Takes less than 2 minutes. No spam, ever.</p>
+        <form id="leadForm">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="(801) 555-0100" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="city">City / Area *</label>
+            <input type="text" id="city" name="city" placeholder="Salt Lake City, Provo, Ogden..." required />
+          </div>
+          <div class="form-group">
+            <label for="type">What are you interested in?</label>
+            <select id="type" name="type">
+              <option value="">-- Select an option --</option>
+              <option value="ridgeline">The Ridgeline (1 Bed + Garage, 560 sq ft)</option>
+              <option value="cottonwood">The Cottonwood (1 Bed, 594 sq ft)</option>
+              <option value="parkcity">The Park City (2 Bed, 960 sq ft)</option>
+              <option value="stickbuilt">Custom Stickbuilt ADU</option>
+              <option value="garage">Garage Conversion ADU</option>
+              <option value="unsure">Not sure yet, want some advice</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Anything else we should know? (optional)</label>
+            <textarea id="message" name="message" placeholder="Lot size, intended use, timeline, questions..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">🚀 Request My Free Estimate</button>
+          <p class="form-note">🔒 No spam, ever. We'll reach out within 1 business day.</p>
+        </form>
+        <div class="success-msg" id="successMsg">
+          <strong>✅ We got your request!</strong>
+          We'll be in touch within 1 business day to schedule your free site visit.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:8019600103">(801) 960-0103</a>
+      <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
+    </div>
+    <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
+    <p style="margin-top:6px;">Serving Salt Lake City, Provo, Ogden, St. George &amp; all of Utah</p>
+    <p style="margin-top:8px;">© 2026 UtahBackyardADUs.com | Licensed Utah General Contractor</p>
+  </footer>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = this;
+      const btn = form.querySelector('.submit-btn');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      const data = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        city: document.getElementById('city').value,
+        type: document.getElementById('type').value,
+        message: document.getElementById('message').value,
+      };
+      try {
+        const res = await fetch('https://formspree.io/f/xgorerne', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          window.location.href = '/thank-you.html';
+        } else {
+          btn.textContent = 'Something went wrong -- please call (801) 960-0103';
+          btn.disabled = false;
+        }
+      } catch(err) {
+        btn.textContent = 'Error -- please call us at (801) 960-0103';
+        btn.disabled = false;
+      }
+    });
+  </script>
+
+</body>
+</html>
