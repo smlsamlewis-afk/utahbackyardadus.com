@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADU Pricing Guide | Utah Backyard ADUs</title>
+  <meta name="description" content="How much does an ADU cost in Utah? Learn about ADU pricing ranges for garage conversions, modular, and custom stickbuilt. Free estimates available." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18090287887');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #2d6a4f;
+      --green-light: #40916c;
+      --green-pale: #d8f3dc;
+      --navy: #1b2a3b;
+      --gray: #f7f8fa;
+      --text: #1e2a38;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.09);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--white); border-bottom: 1px solid #e5e7eb;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+    }
+    .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--green); text-decoration: none; }
+    .nav-logo span { color: var(--navy); }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a { text-decoration: none; color: var(--navy); font-size: 0.93rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--green); }
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+    .nav-phone { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.93rem; }
+    .nav-phone:hover { color: var(--green); }
+    .nav-cta { background: var(--green); color: var(--white); text-decoration: none; padding: 10px 20px; border-radius: var(--radius); font-weight: 600; font-size: 0.88rem; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--green-light); }
+
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%); padding: 60px 5%; color: white; text-align: center; }
+    .page-hero .badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #d8f3dc; padding: 5px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 16px; text-transform: uppercase; }
+    .page-hero h1 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; margin-bottom: 14px; }
+    .page-hero p { font-size: 1.05rem; opacity: 0.85; max-width: 620px; margin: 0 auto; }
+
+    /* SECTIONS */
+    section { padding: 70px 5%; }
+    .section-inner { max-width: 1050px; margin: 0 auto; }
+    .section-label { display: inline-block; background: var(--green-pale); color: var(--green); font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 14px; }
+    .section-title { font-size: clamp(1.5rem, 2.5vw, 2.1rem); font-weight: 800; color: var(--navy); margin-bottom: 14px; line-height: 1.2; }
+    .section-sub { font-size: 1rem; color: var(--muted); max-width: 680px; line-height: 1.75; margin-bottom: 40px; }
+
+    /* PRICING CARDS */
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .pricing-card { background: var(--white); border-radius: 16px; padding: 32px 28px; box-shadow: var(--shadow); border-top: 5px solid var(--green); position: relative; }
+    .pricing-card.featured { border-top-color: var(--navy); background: var(--navy); color: white; }
+    .pricing-card.featured .price-label { color: rgba(255,255,255,0.7); }
+    .pricing-card.featured .price-range { color: #74c69d; }
+    .pricing-card.featured .price-desc { color: rgba(255,255,255,0.75); }
+    .pricing-card.featured .price-features li { color: rgba(255,255,255,0.85); }
+    .pricing-card.featured h3 { color: white; }
+    .pricing-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--green); color: white; font-size: 0.72rem; font-weight: 700; padding: 4px 14px; border-radius: 99px; white-space: nowrap; text-transform: uppercase; letter-spacing: 0.5px; }
+    .pricing-icon { font-size: 2.2rem; margin-bottom: 14px; }
+    .pricing-card h3 { font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+    .price-label { font-size: 0.78rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+    .price-range { font-size: 1.6rem; font-weight: 800; color: var(--green); margin-bottom: 12px; line-height: 1.1; }
+    .price-desc { font-size: 0.88rem; color: var(--muted); margin-bottom: 20px; line-height: 1.65; }
+    .price-features { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .price-features li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.87rem; color: var(--text); }
+    .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+    /* FACTORS TABLE */
+    .factors { background: var(--gray); }
+    .factors-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .factor-card { background: var(--white); border-radius: 12px; padding: 24px; box-shadow: var(--shadow); display: flex; gap: 16px; align-items: flex-start; }
+    .factor-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .factor-card h4 { font-size: 0.97rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .factor-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+
+    /* ROI SECTION */
+    .roi { background: var(--white); }
+    .roi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 10px; }
+    .roi-card { background: var(--gray); border-radius: 14px; padding: 28px; text-align: center; }
+    .roi-card strong { display: block; font-size: 2rem; font-weight: 800; color: var(--green); margin-bottom: 6px; }
+    .roi-card h4 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .roi-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+
+    /* DISCLAIMER */
+    .disclaimer { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 12px; padding: 20px 24px; margin-top: 40px; font-size: 0.88rem; color: #92400e; line-height: 1.65; }
+    .disclaimer strong { display: block; margin-bottom: 4px; font-size: 0.9rem; }
+
+    /* CTA BANNER */
+    .cta-banner { background: linear-gradient(135deg, #2d6a4f 0%, #1b2a3b 100%); text-align: center; color: white; padding: 80px 5%; }
+    .cta-banner h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; margin-bottom: 14px; }
+    .cta-banner p { font-size: 1.05rem; opacity: 0.85; margin-bottom: 36px; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-white { display: inline-block; background: white; color: var(--green); text-decoration: none; padding: 16px 40px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+    .btn-white:hover { transform: translateY(-2px); }
+    .btn-outline { display: inline-block; background: transparent; color: white; text-decoration: none; padding: 15px 36px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; border: 2px solid rgba(255,255,255,0.5); transition: border-color 0.2s; }
+    .btn-outline:hover { border-color: white; }
+
+    /* FOOTER */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 40px 5%; text-align: center; font-size: 0.88rem; }
+    footer strong { color: white; }
+    footer a { color: rgba(255,255,255,0.65); text-decoration: none; }
+    footer a:hover { color: white; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 14px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+      .factors-grid { grid-template-columns: 1fr; }
+      .roi-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 600px) {
+      .nav-phone { display: none; }
+      .roi-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html"><span>Utah</span>BackyardADUs.com</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="financing.html">Financing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:8019600103">📞 (801) 960-0103</a>
+      <a class="nav-cta" href="contact.html">Free Estimate</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="badge">ADU Pricing Guide</div>
+    <h1>How Much Does an ADU Cost in Utah?</h1>
+    <p>Honest, straightforward pricing information so you can plan with confidence. Every project is different, but here is what you can generally expect to invest.</p>
+  </div>
+
+  <!-- PRICING OVERVIEW -->
+  <section style="background: var(--gray);">
+    <div class="section-inner">
+      <div class="section-label">Pricing Overview</div>
+      <h2 class="section-title">ADU Cost Ranges in Utah</h2>
+      <p class="section-sub">These ranges reflect real project costs in Utah based on current material and labor prices. Your exact cost depends on your lot, the model you choose, finishes, and site conditions. A free property visit gives you the most accurate number.</p>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-icon">🚗</div>
+          <h3>Garage Conversion ADU</h3>
+          <div class="price-label">Typical Range</div>
+          <div class="price-range">$50K - $120K</div>
+          <p class="price-desc">The most affordable path to a legal ADU. You're working with an existing structure, which eliminates foundation and framing costs. Great for homeowners who want rental income without a large upfront investment.</p>
+          <ul class="price-features">
+            <li>Uses your existing garage structure</li>
+            <li>Lower cost than new construction</li>
+            <li>Full electrical, plumbing and insulation included</li>
+            <li>Permits and inspections handled</li>
+            <li>Best ROI for budget-conscious homeowners</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Common</div>
+          <div class="pricing-icon">🏗️</div>
+          <h3>Prefab / Modular ADU</h3>
+          <div class="price-label">Typical Range</div>
+          <div class="price-range">$120K - $200K</div>
+          <p class="price-desc">Factory-built and assembled on your lot. Faster to complete and generally more cost-effective than full custom builds. A great balance of quality, speed, and value for most Utah homeowners.</p>
+          <ul class="price-features">
+            <li>Studio, 1 bed and 2 bed models available</li>
+            <li>Built to the same code as stickbuilt</li>
+            <li>50 to 70% faster than traditional construction</li>
+            <li>Foundation, delivery and set included</li>
+            <li>Permits and inspections handled</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-icon">🏠</div>
+          <h3>Custom Stickbuilt ADU</h3>
+          <div class="price-label">Typical Range</div>
+          <div class="price-range">$180K - $300K</div>
+          <p class="price-desc">Built on-site from the ground up with full customization. Maximum design flexibility, premium finishes, and the highest long-term property value. Ideal for homeowners who want something completely tailored to their lot and style.</p>
+          <ul class="price-features">
+            <li>Fully custom floor plans and layouts</li>
+            <li>Your choice of finishes and materials</li>
+            <li>Matches your home's architecture</li>
+            <li>Highest resale and rental value</li>
+            <li>Studio up to 3 bedrooms available</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="disclaimer">
+        <strong>Important Note on Pricing</strong>
+        These ranges are general estimates based on current Utah market conditions. Your actual cost will depend on your specific lot, local permitting fees, site preparation needs, utility hookups, and the finishes you choose. The only way to get an accurate number for your property is a free site visit. We will give you a straight, honest estimate with no pressure.
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT AFFECTS COST -->
+  <section class="factors">
+    <div class="section-inner">
+      <div class="section-label">Cost Factors</div>
+      <h2 class="section-title">What Affects the Final Price</h2>
+      <p class="section-sub">No two ADU projects are identical. Here are the main factors that move the needle on cost.</p>
+      <div class="factors-grid">
+        <div class="factor-card">
+          <div class="factor-icon">📐</div>
+          <div>
+            <h4>Size and Square Footage</h4>
+            <p>Larger units cost more to build. A 400 sq ft studio will always come in lower than a 900 sq ft 2-bedroom. That said, cost per square foot actually decreases as you go bigger.</p>
+          </div>
+        </div>
+        <div class="factor-card">
+          <div class="factor-icon">🏗️</div>
+          <div>
+            <h4>Build Type</h4>
+            <p>Modular ADUs are faster and typically less expensive than custom stickbuilt. Garage conversions are the most affordable since you're working with an existing structure.</p>
+          </div>
+        </div>
+        <div class="factor-card">
+          <div class="factor-icon">🔧</div>
+          <div>
+            <h4>Site Preparation</h4>
+            <p>Sloped lots, poor soil conditions, or limited access can add to site prep costs. Flat, accessible lots with easy utility connections cost less to develop.</p>
+          </div>
+        </div>
+        <div class="factor-card">
+          <div class="factor-icon">✨</div>
+          <div>
+            <h4>Finishes and Materials</h4>
+            <p>Standard finishes are included in base pricing. Upgraded flooring, custom cabinetry, premium appliances, and high-end fixtures can add $10K to $40K depending on selections.</p>
+          </div>
+        </div>
+        <div class="factor-card">
+          <div class="factor-icon">📋</div>
+          <div>
+            <h4>Permits and Fees</h4>
+            <p>City permit fees in Utah typically range from $3,000 to $12,000 depending on the municipality. We handle all permitting and these fees are included in your estimate.</p>
+          </div>
+        </div>
+        <div class="factor-card">
+          <div class="factor-icon">💡</div>
+          <div>
+            <h4>Utility Connections</h4>
+            <p>Connecting to existing water, sewer, gas, and electrical can vary significantly depending on how far your ADU is from the main home and existing infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI SECTION -->
+  <section class="roi">
+    <div class="section-inner">
+      <div class="section-label">Return on Investment</div>
+      <h2 class="section-title">ADUs Are One of the Best Investments You Can Make</h2>
+      <p class="section-sub">When you look at the numbers, a well-built ADU pays for itself — and then some. Here is what Utah homeowners are seeing.</p>
+      <div class="roi-grid">
+        <div class="roi-card">
+          <strong>$1,200 - $2,500</strong>
+          <h4>Monthly Rental Income</h4>
+          <p>Depending on size, location, and finishes, Utah ADUs are renting for strong numbers in 2026 especially in Salt Lake City and Park City.</p>
+        </div>
+        <div class="roi-card">
+          <strong>5 - 10 Years</strong>
+          <h4>Average Payback Period</h4>
+          <p>Most ADU owners recoup their full investment through rental income within 5 to 10 years. After that it is pure profit every month.</p>
+        </div>
+        <div class="roi-card">
+          <strong>20 - 30%</strong>
+          <h4>Property Value Increase</h4>
+          <p>A finished, permitted ADU adds significant value to your home beyond just the rental income. Buyers pay a premium for properties with ADUs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <h2>Get an Accurate Number for Your Property</h2>
+    <p>These ranges are a starting point. A free site visit gives you a real number based on your specific lot and goals.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-white">Request Free Estimate</a>
+      <a href="tel:8019600103" class="btn-outline">📞 Call (801) 960-0103</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="financing.html">Financing</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:8019600103">(801) 960-0103</a>
+    </div>
+    <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
+    <p style="margin-top:6px;">Serving Salt Lake City, Provo, Ogden, St. George &amp; all of Utah</p>
+    <p style="margin-top:8px;">© 2026 UtahBackyardADUs.com | Licensed Utah General Contractor</p>
+  </footer>
+
+</body>
+</html>
