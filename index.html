@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Utah Backyard ADUs | Custom, Modular & Garage Conversion ADUs</title>
   <meta name="description" content="Utah's ADU specialists. Custom stickbuilt, prefab modular, and garage conversion ADUs. 50+ homes completed. Free estimates. Call 801-960-0103." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18090287887');
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -30,6 +38,9 @@
     }
     .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--green); text-decoration: none; }
     .nav-logo span { color: var(--navy); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { text-decoration: none; color: var(--navy); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--green); }
     .nav-right { display: flex; align-items: center; gap: 20px; }
     .nav-phone { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.95rem; }
     .nav-phone:hover { color: var(--green); }
@@ -39,8 +50,9 @@
     .hero {
       background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%);
       color: var(--white); padding: 80px 5% 90px;
-      display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: center;
+      display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: start;
     }
+    .hero-content { padding-top: 40px; }
     .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #d8f3dc; padding: 5px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 20px; text-transform: uppercase; }
     .hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.5px; }
     .hero h1 em { color: #74c69d; font-style: normal; }
@@ -211,10 +223,17 @@
 <body>
   <!-- NAV -->
   <nav>
-    <a class="nav-logo" href="#"><span>Utah</span>BackyardADUs.com</a>
+    <a class="nav-logo" href="index.html"><span>Utah</span>BackyardADUs.com</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="models.html">Models</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="financing.html">Financing</a>
+      <a href="contact.html">Contact</a>
+    </div>
     <div class="nav-right">
       <a class="nav-phone" href="tel:8019600103">📞 (801) 960-0103</a>
-      <a class="nav-cta" href="#quote">Free Estimate</a>
+      <a class="nav-cta" href="contact.html">Free Estimate</a>
     </div>
   </nav>
   <!-- HERO -->
@@ -591,14 +610,16 @@
     <h2>Ready to Get Started?</h2>
     <p>One call is all it takes. We'll come to you, assess your property, and walk you through your options, completely free.</p>
     <div class="cta-buttons">
-      <a href="#quote" class="btn-white">Request Free Estimate →</a>
+      <a href="contact.html" class="btn-white">Request Free Estimate →</a>
       <a href="tel:8019600103" class="btn-outline">📞 Call (801) 960-0103</a>
     </div>
   </section>
   <!-- FOOTER -->
   <footer>
     <div class="footer-links">
-      <a href="#quote">Get Free Estimate</a>
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html">Contact</a>
       <a href="tel:8019600103">(801) 960-0103</a>
       <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
     </div>
@@ -646,8 +667,7 @@
           body: JSON.stringify(data)
         });
         if (res.ok) {
-          form.style.display = 'none';
-          document.getElementById('successMsg').style.display = 'block';
+          window.location.href = '/thank-you.html';
         } else {
           btn.textContent = 'Something went wrong -- please call (801) 960-0103';
           btn.disabled = false;
