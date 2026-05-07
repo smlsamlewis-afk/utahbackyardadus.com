@@ -115,8 +115,7 @@
       <a href="contact.html" class="active">Contact</a>
     </div>
     <div class="nav-right">
-      <a class="nav-phone phone-link" href="#" aria-label="Call us">📞 Call</a>
-      <a class="nav-cta" href="contact.html">Free Estimate</a>
+      <a class="nav-cta" href="contact.html">Get a Free Estimate</a>
     </div>
   </nav>
   <!-- PAGE HERO -->
@@ -131,20 +130,20 @@
       <!-- LEFT: Info -->
       <div class="contact-info">
         <h2>We'd Love to Hear from You</h2>
-        <p>Whether you have a specific model in mind or you're just exploring your options, we're here to help. One call or form submission gets the conversation started.</p>
+        <p>Whether you have a specific model in mind or you're just exploring your options, we're here to help. Fill out the form on this page and we'll be in touch within 1 business day.</p>
         <div class="contact-methods">
-          <a class="contact-method phone-link-block" href="#" aria-label="Call or text Sam">
-            <div class="contact-method-icon">📞</div>
+          <a href="#quote" class="contact-method">
+            <div class="contact-method-icon">📝</div>
             <div class="contact-method-text">
-              <strong class="phone-text">Tap to reveal</strong>
-              <span>Call or text Sam directly</span>
+              <strong>Use the form on this page</strong>
+              <span>Fastest way to reach us &mdash; replies within 1 business day</span>
             </div>
           </a>
           <a href="mailto:smlsamlewis@gmail.com" class="contact-method">
             <div class="contact-method-icon">✉️</div>
             <div class="contact-method-text">
               <strong>smlsamlewis@gmail.com</strong>
-              <span>Email us anytime</span>
+              <span>Or email us directly anytime</span>
             </div>
           </a>
           <div class="contact-method">
@@ -240,7 +239,6 @@
       <a href="index.html">Home</a>
       <a href="models.html">Models</a>
       <a href="contact.html">Contact</a>
-      <a class="phone-link" href="#" aria-label="Call us">Call</a>
       <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
     </div>
     <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
@@ -248,32 +246,6 @@
     <p style="margin-top:8px;">© 2026 UtahBackyardADUs.com | Licensed Utah General Contractor</p>
   </footer>
   <script>
-    // Phone assembly - keeps the number out of static HTML so spam scrapers don't pick it up
-    (function() {
-      var p = ['8','0','1','9','6','0','0','1','0','3'];
-      var raw = p.join('');
-      var fmt = '(' + p.slice(0,3).join('') + ') ' + p.slice(3,6).join('') + '-' + p.slice(6).join('');
-      window.PHONE_FORMATTED = fmt;
-      document.querySelectorAll('a.phone-link, a.phone-link-block').forEach(function(el) {
-        el.href = 'tel:' + raw;
-        var prefix = el.dataset.prefix !== undefined ? el.dataset.prefix : '';
-        var label = el.dataset.label || '';
-        if (el.classList.contains('phone-link-block')) {
-          // For block-style cards we leave the layout alone and just fill the .phone-text inside
-          return;
-        }
-        if (label) {
-          el.innerHTML = label + ' ' + fmt;
-        } else if (prefix) {
-          el.innerHTML = prefix + ' ' + fmt;
-        } else {
-          el.innerHTML = fmt;
-        }
-      });
-      document.querySelectorAll('.phone-text').forEach(function(el) {
-        el.textContent = fmt;
-      });
-    })();
     document.getElementById('leadForm').addEventListener('submit', async function(e) {
       e.preventDefault();
       const form = this;
@@ -297,11 +269,11 @@
         if (res.ok) {
           window.location.href = '/thank-you.html';
         } else {
-          btn.textContent = 'Something went wrong -- please call ' + window.PHONE_FORMATTED;
+          btn.textContent = 'Something went wrong -- please email smlsamlewis@gmail.com';
           btn.disabled = false;
         }
       } catch(err) {
-        btn.textContent = 'Error -- please call us at ' + window.PHONE_FORMATTED;
+        btn.textContent = 'Error -- please email smlsamlewis@gmail.com';
         btn.disabled = false;
       }
     });

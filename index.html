@@ -232,8 +232,7 @@
       <a href="contact.html">Contact</a>
     </div>
     <div class="nav-right">
-      <a class="nav-phone phone-link" href="#" aria-label="Call us">📞 Call</a>
-      <a class="nav-cta" href="contact.html">Free Estimate</a>
+      <a class="nav-cta" href="contact.html">Get a Free Estimate</a>
     </div>
   </nav>
   <!-- HERO -->
@@ -577,7 +576,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">How do I get an estimate? Is it really free?<span class="arrow">▼</span></button>
-          <div class="faq-a">100% free, no strings attached. Just fill out the form on this page or give us a call at <span class="phone-text">our office</span>. We'll schedule a time to visit your property, walk through your options, and give you a clear picture of what's possible. You decide what happens next.</div>
+          <div class="faq-a">100% free, no strings attached. Just fill out the form on this page and we'll reach out within 1 business day to schedule a time to visit your property, walk through your options, and give you a clear picture of what's possible. You decide what happens next.</div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">What's the difference between stickbuilt, modular, and a garage conversion?<span class="arrow">▼</span></button>
@@ -609,10 +608,9 @@
   <!-- CTA BANNER -->
   <section class="cta-banner">
     <h2>Ready to Get Started?</h2>
-    <p>One call is all it takes. We'll come to you, assess your property, and walk you through your options, completely free.</p>
+    <p>Tell us about your property and we'll reach out within 1 business day to schedule a free, no-pressure site visit. Takes less than 2 minutes.</p>
     <div class="cta-buttons">
-      <a href="contact.html" class="btn-white">Request Free Estimate →</a>
-      <a class="btn-outline phone-link" href="#" data-label="📞 Call" aria-label="Call us">📞 Call Us</a>
+      <a href="contact.html" class="btn-white">Request My Free Estimate →</a>
     </div>
   </section>
   <!-- FOOTER -->
@@ -621,7 +619,6 @@
       <a href="index.html">Home</a>
       <a href="models.html">Models</a>
       <a href="contact.html">Contact</a>
-      <a class="phone-link" href="#" data-prefix="" aria-label="Call us">Call</a>
       <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
     </div>
     <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
@@ -629,30 +626,6 @@
     <p style="margin-top:8px;">© 2026 UtahBackyardADUs.com | Licensed Utah General Contractor</p>
   </footer>
   <script>
-    // Phone assembly - keeps the number out of static HTML so spam scrapers don't pick it up
-    (function() {
-      var p = ['8','0','1','9','6','0','0','1','0','3'];
-      var raw = p.join('');
-      var fmt = '(' + p.slice(0,3).join('') + ') ' + p.slice(3,6).join('') + '-' + p.slice(6).join('');
-      window.PHONE_FORMATTED = fmt;
-      // Fill <a class="phone-link"> elements
-      document.querySelectorAll('a.phone-link').forEach(function(el) {
-        el.href = 'tel:' + raw;
-        var prefix = el.dataset.prefix !== undefined ? el.dataset.prefix : '';
-        var label = el.dataset.label || '';
-        if (label) {
-          el.innerHTML = label + ' ' + fmt;
-        } else if (prefix) {
-          el.innerHTML = prefix + ' ' + fmt;
-        } else {
-          el.innerHTML = fmt;
-        }
-      });
-      // Fill any inline <span class="phone-text"> mentions
-      document.querySelectorAll('.phone-text').forEach(function(el) {
-        el.textContent = fmt;
-      });
-    })();
     // FAQ accordion
     document.querySelectorAll('.faq-q').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -694,11 +667,11 @@
         if (res.ok) {
           window.location.href = '/thank-you.html';
         } else {
-          btn.textContent = 'Something went wrong -- please call ' + window.PHONE_FORMATTED;
+          btn.textContent = 'Something went wrong -- please email smlsamlewis@gmail.com';
           btn.disabled = false;
         }
       } catch(err) {
-        btn.textContent = 'Error -- please call us at ' + window.PHONE_FORMATTED;
+        btn.textContent = 'Error -- please email smlsamlewis@gmail.com';
         btn.disabled = false;
       }
     });
