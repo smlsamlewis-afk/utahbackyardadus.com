@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ADU Models | Utah Backyard ADUs</title>
   <meta name="description" content="Browse our ADU floor plans. Studio, 1 bedroom, and 2 bedroom models available. Custom stickbuilt and modular options. Free estimates in Utah." />
+  <link rel="canonical" href="https://utahbackyardadus.com/models.html" />
+  <meta property="og:title" content="ADU Models | Utah Backyard ADUs" />
+  <meta property="og:description" content="Browse our ADU floor plans. Studio, 1 bedroom, and 2 bedroom models available. Custom stickbuilt and modular options. Free estimates in Utah." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://utahbackyardadus.com/models.html" />
+  <meta property="og:image" content="https://utahbackyardadus.com/model4.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
   <script>
@@ -78,6 +85,9 @@
     .model-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--text); }
     .model-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
     .model-cta { display: inline-block; background: var(--green); color: white; text-decoration: none; padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 0.95rem; transition: background 0.2s; align-self: flex-start; }
+    .model-price { font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+    .model-price strong { color: var(--green); }
+    .model-note { font-size: 0.78rem; color: var(--muted); margin-top: 12px; font-style: italic; }
     .model-cta:hover { background: var(--green-light); }
 
     /* FLOOR PLAN TABS */
@@ -109,11 +119,42 @@
       .model-card, .model-card.reverse { grid-template-columns: 1fr; direction: ltr; }
       .model-images { min-height: 300px; }
       .model-info { padding: 32px 28px; }
-      .nav-links { display: none; }
     }
     @media (max-width: 600px) {
       .nav-phone { display: none; }
       .model-specs { grid-template-columns: repeat(3, 1fr); }
+    }
+  
+    /* STANDARD FEATURES */
+    .features-section { padding: 80px 5%; background: var(--white); border-top: 1px solid #eef0f2; }
+    .section-label { display: inline-block; background: var(--green-pale); color: var(--green); font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 14px; }
+    .features-title { font-size: clamp(1.5rem, 2.5vw, 2.1rem); font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+    .features-sub { font-size: 1rem; color: var(--muted); max-width: 700px; line-height: 1.75; margin-bottom: 40px; }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .feature-card { background: var(--gray); border-radius: 14px; padding: 28px; }
+    .feature-card h4 { font-size: 1.05rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+    .feature-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .feature-card li { font-size: 0.88rem; color: var(--text); line-height: 1.6; padding-left: 20px; position: relative; }
+    .feature-card li::before { content: "✓"; color: var(--green); font-weight: 700; position: absolute; left: 0; }
+    @media (max-width: 900px) { .features-grid { grid-template-columns: 1fr; } }
+
+    /* MOBILE NAV TOGGLE */
+    .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 34px; height: 34px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+    .nav-toggle span { display: block; height: 3px; width: 100%; background: var(--navy); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
+    .nav-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .nav-toggle.active span:nth-child(2) { opacity: 0; }
+    .nav-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    @media (max-width: 900px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: absolute; top: 68px; left: 0; right: 0;
+        background: var(--white); flex-direction: column; align-items: stretch;
+        gap: 0; max-height: 0; overflow: hidden; opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.2s ease;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.1); border-bottom: 1px solid #e5e7eb;
+      }
+      .nav-links.open { max-height: 420px; opacity: 1; }
+      .nav-links a { width: 100%; padding: 16px 24px; border-bottom: 1px solid #f0f0f0; }
     }
   </style>
 </head>
@@ -125,6 +166,7 @@
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="models.html" class="active">Models</a>
+      <a href="gallery.html">Gallery</a>
       <a href="pricing.html">Pricing</a>
       <a href="financing.html">Financing</a>
       <a href="contact.html">Contact</a>
@@ -133,6 +175,9 @@
       <a class="nav-phone" href="tel:8019600103">📞 (801) 960-0103</a>
       <a class="nav-cta" href="contact.html">Free Estimate</a>
     </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -228,6 +273,73 @@
           </div>
         </div>
 
+        <!-- MODEL 4: The Wasatch - 2 Bed 748 sqft Stickbuilt -->
+        <div class="model-card reverse">
+          <div class="model-images">
+            <img class="model-main-img" src="model4.jpg" alt="The Wasatch ADU - 2 bedroom 748 sq ft custom stickbuilt concept rendering" />
+            <div class="model-tag">New Floor Plan</div>
+          </div>
+          <div class="model-info">
+            <div class="model-name">The Wasatch</div>
+            <div class="model-sqft">748 sq ft | 2 Bedroom | Custom Stickbuilt</div>
+            <div class="model-specs">
+              <div class="spec-box"><strong>2</strong><span>Bedrooms</span></div>
+              <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
+              <div class="spec-box"><strong>748</strong><span>Total sq ft</span></div>
+            </div>
+            <p class="model-desc">A fully custom, on-site stickbuilt ADU with a covered front porch, gable roof, and an efficient 2-bedroom layout built around a shared bath. Hardie fiber cement siding and architectural shingles keep it low-maintenance, while a 3-zone mini-split system keeps every room comfortable year-round. Engineered and permit-ready for Utah code.</p>
+            <ul class="model-features">
+              <li>748 sq ft custom stickbuilt construction</li>
+              <li>Two bedrooms sharing an efficient central bath</li>
+              <li>Covered entry porch with concrete patio</li>
+              <li>Hardie cement fiber board lap siding</li>
+              <li>30-year architectural asphalt shingle roof</li>
+              <li>3-zone mini-split heating &amp; cooling</li>
+            </ul>
+            <div class="model-price">Starting at <strong>$220,000</strong></div>
+            <a href="contact.html" class="model-cta">Get a Free Estimate</a>
+            <p class="model-note">Image shown is a 3D concept rendering from engineered plans, not a completed project photo.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STANDARD FEATURES -->
+  <section class="features-section">
+    <div class="models-inner">
+      <div class="section-label">Modern Series</div>
+      <h2 class="features-title">Every Home Comes Standard With Quality Finishes</h2>
+      <p class="features-sub">All of our models ship with our Modern Series feature package as standard, with upgrade options available in nearly every category, from siding to countertops. Ask for a full copy of the spec sheet during your free estimate.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>Exterior</h4>
+          <ul>
+            <li>Fiber cement lap siding standard, with cedar, board &amp; batten, and standing seam metal upgrades</li>
+            <li>Lifetime architectural asphalt shingle roofing</li>
+            <li>Builder-grade vinyl windows, with Marvin Essentials and Elevate upgrades</li>
+            <li>Trex composite decking with painted steel railings</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>Kitchen</h4>
+          <ul>
+            <li>Soft-close cabinetry in multiple standard finishes</li>
+            <li>2cm quartz countertops standard, with 3cm quartz and granite upgrades</li>
+            <li>Stainless steel appliance package</li>
+            <li>Undermount stainless sink with pull-down faucet</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>Bath &amp; Interior</h4>
+          <ul>
+            <li>Moen and Gerber fixtures throughout</li>
+            <li>Fiberglass shower/tub standard, with tile surround upgrades</li>
+            <li>SPC flooring standard, with engineered hardwood &amp; tile upgrades available</li>
+            <li>LED lighting package and two-tone paint options</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -256,5 +368,23 @@
     <p style="margin-top:8px;">© 2026 UtahBackyardADUs.com | Licensed Utah General Contractor</p>
   </footer>
 
+
+  <script>
+    document.querySelectorAll('.nav-toggle').forEach(function(btn){
+      var nav = btn.closest('nav');
+      var links = nav.querySelector('.nav-links');
+      btn.addEventListener('click', function(){
+        var open = links.classList.toggle('open');
+        btn.classList.toggle('active', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      links.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          links.classList.remove('open');
+          btn.classList.remove('active');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

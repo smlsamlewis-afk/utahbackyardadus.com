@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ADU Financing Options | Utah Backyard ADUs</title>
   <meta name="description" content="How to finance an ADU in Utah. Learn about HELOCs, home equity loans, construction loans, and ADU-specific financing. Free estimates available." />
+  <link rel="canonical" href="https://utahbackyardadus.com/financing.html" />
+  <meta property="og:title" content="ADU Financing Options | Utah Backyard ADUs" />
+  <meta property="og:description" content="How to finance an ADU in Utah. Learn about HELOCs, home equity loans, construction loans, and ADU-specific financing. Free estimates available." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://utahbackyardadus.com/financing.html" />
+  <meta property="og:image" content="https://utahbackyardadus.com/samafter.JPG" />
+  <meta name="twitter:card" content="summary_large_image" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
   <script>
@@ -156,12 +163,30 @@
       .options-grid { grid-template-columns: 1fr; }
       .tips-grid { grid-template-columns: 1fr 1fr; }
       .pc-grid { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
     }
     @media (max-width: 600px) {
       .nav-phone { display: none; }
       .tips-grid { grid-template-columns: 1fr; }
       .equity-box { padding: 24px 20px; }
+    }
+  
+    /* MOBILE NAV TOGGLE */
+    .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 34px; height: 34px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+    .nav-toggle span { display: block; height: 3px; width: 100%; background: var(--navy); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
+    .nav-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .nav-toggle.active span:nth-child(2) { opacity: 0; }
+    .nav-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    @media (max-width: 900px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: absolute; top: 68px; left: 0; right: 0;
+        background: var(--white); flex-direction: column; align-items: stretch;
+        gap: 0; max-height: 0; overflow: hidden; opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.2s ease;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.1); border-bottom: 1px solid #e5e7eb;
+      }
+      .nav-links.open { max-height: 420px; opacity: 1; }
+      .nav-links a { width: 100%; padding: 16px 24px; border-bottom: 1px solid #f0f0f0; }
     }
   </style>
 </head>
@@ -173,6 +198,7 @@
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="models.html">Models</a>
+      <a href="gallery.html">Gallery</a>
       <a href="pricing.html">Pricing</a>
       <a href="financing.html" class="active">Financing</a>
       <a href="contact.html">Contact</a>
@@ -181,6 +207,9 @@
       <a class="nav-phone" href="tel:8019600103">📞 (801) 960-0103</a>
       <a class="nav-cta" href="contact.html">Free Estimate</a>
     </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -453,5 +482,23 @@
     });
   </script>
 
+
+  <script>
+    document.querySelectorAll('.nav-toggle').forEach(function(btn){
+      var nav = btn.closest('nav');
+      var links = nav.querySelector('.nav-links');
+      btn.addEventListener('click', function(){
+        var open = links.classList.toggle('open');
+        btn.classList.toggle('active', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      links.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          links.classList.remove('open');
+          btn.classList.remove('active');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
