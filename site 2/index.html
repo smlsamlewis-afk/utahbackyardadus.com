@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utah Backyard ADUs | Custom, Modular & Garage Conversion ADUs</title>
+  <meta name="description" content="Utah's ADU specialists. Custom stickbuilt, prefab modular, and garage conversion ADUs. Founder-led with 50+ ADUs of experience. Free estimates and free property visits across Utah." />
+  <link rel="canonical" href="https://utahbackyardadus.com/index.html" />
+  <meta property="og:title" content="Utah Backyard ADUs | Custom, Modular & Garage Conversion ADUs" />
+  <meta property="og:description" content="Utah's ADU specialists. Custom stickbuilt, prefab modular, and garage conversion ADUs. Founder-led with 50+ ADUs of experience. Free estimates and free property visits across Utah." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://utahbackyardadus.com/index.html" />
+  <meta property="og:image" content="https://utahbackyardadus.com/samafter.JPG" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18090287887');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #2d6a4f;
+      --green-light: #40916c;
+      --green-pale: #d8f3dc;
+      --navy: #1b2a3b;
+      --gray: #f7f8fa;
+      --text: #1e2a38;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.09);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--white); border-bottom: 1px solid #e5e7eb;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+    }
+    .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--green); text-decoration: none; }
+    .nav-logo span { color: var(--navy); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { text-decoration: none; color: var(--navy); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--green); }
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .nav-phone { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.95rem; }
+    .nav-phone:hover { color: var(--green); }
+    .nav-cta { background: var(--green); color: var(--white); text-decoration: none; padding: 10px 22px; border-radius: var(--radius); font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--green-light); }
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%);
+      color: var(--white); padding: 80px 5% 90px;
+      display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: start;
+    }
+    .hero-content { padding-top: 40px; }
+    .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #d8f3dc; padding: 5px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 20px; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.5px; }
+    .hero h1 em { color: #74c69d; font-style: normal; }
+    .hero p { font-size: 1.1rem; opacity: 0.88; max-width: 500px; margin-bottom: 30px; }
+    .hero-stats { display: flex; gap: 28px; flex-wrap: wrap; }
+    .stat { text-align: center; }
+    .stat strong { display: block; font-size: 1.6rem; font-weight: 800; color: #74c69d; }
+    .stat span { font-size: 0.8rem; opacity: 0.75; }
+    /* FORM CARD */
+    .form-card { background: var(--white); border-radius: 16px; padding: 36px 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); color: var(--text); }
+    .form-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; color: var(--navy); }
+    .form-card > p { font-size: 0.88rem; color: var(--muted); margin-bottom: 22px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 5px; color: var(--navy); }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 11px 14px; border: 1.5px solid #d1d5db; border-radius: 8px; font-size: 0.95rem; color: var(--text); background: #f9fafb; transition: border 0.2s; font-family: inherit; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--green); background: var(--white); }
+    .form-group textarea { resize: vertical; min-height: 75px; }
+    .submit-btn { width: 100%; padding: 14px; background: var(--green); color: var(--white); border: none; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; margin-top: 4px; }
+    .submit-btn:hover { background: var(--green-light); }
+    .submit-btn:disabled { background: var(--muted); cursor: not-allowed; }
+    .form-note { text-align: center; font-size: 0.78rem; color: var(--muted); margin-top: 10px; }
+    .success-msg { display: none; text-align: center; padding: 24px; background: var(--green-pale); border-radius: 10px; color: var(--green); font-weight: 600; }
+    .success-msg strong { display: block; font-size: 1.1rem; margin-bottom: 6px; }
+    /* TRUST BAR */
+    .trust-bar { background: var(--navy); display: flex; justify-content: center; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 10px; padding: 18px 28px; color: rgba(255,255,255,0.85); font-size: 0.88rem; border-right: 1px solid rgba(255,255,255,0.1); }
+    .trust-item:last-child { border-right: none; }
+    /* SECTIONS */
+    section { padding: 80px 5%; }
+    .section-label { display: inline-block; background: var(--green-pale); color: var(--green); font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 14px; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; color: var(--navy); letter-spacing: -0.4px; line-height: 1.2; margin-bottom: 14px; }
+    .section-sub { font-size: 1.05rem; color: var(--muted); max-width: 600px; }
+    .centered { text-align: center; }
+    .centered .section-sub { margin: 0 auto; }
+    /* SERVICES */
+    .services { background: var(--gray); }
+    .services-inner { max-width: 1100px; margin: 0 auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 50px; }
+    .service-card { background: var(--white); border-radius: 14px; padding: 32px 28px; box-shadow: var(--shadow); border-top: 4px solid var(--green); transition: transform 0.2s; }
+    .service-card:hover { transform: translateY(-4px); }
+    .service-icon { font-size: 2.4rem; margin-bottom: 14px; }
+    .service-card h3 { font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+    .service-card p { font-size: 0.92rem; color: var(--muted); margin-bottom: 16px; line-height: 1.65; }
+    .service-features { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .service-features li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.88rem; color: var(--text); }
+    .service-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    /* GALLERY / OUR WORK */
+    .gallery { background: var(--white); }
+    .gallery-inner { max-width: 1100px; margin: 0 auto; }
+    /* FEATURED PROJECT */
+    .featured-project { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-top: 50px; background: var(--gray); border-radius: 18px; overflow: hidden; }
+    .featured-img-wrap { position: relative; height: 100%; min-height: 380px; }
+    .featured-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .featured-badge { position: absolute; top: 18px; left: 18px; background: var(--green); color: white; font-size: 0.78rem; font-weight: 700; padding: 6px 14px; border-radius: 99px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .featured-info { padding: 40px 40px 40px 0; }
+    .featured-info h3 { font-size: 1.35rem; font-weight: 800; color: var(--navy); margin-bottom: 16px; line-height: 1.3; }
+    .featured-info p { font-size: 0.93rem; color: var(--muted); line-height: 1.75; margin-bottom: 14px; }
+    .featured-details { list-style: none; display: flex; flex-direction: column; gap: 8px; margin: 18px 0 24px; }
+    .featured-details li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--text); }
+    .featured-details li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    .featured-cta { display: inline-block; background: var(--green); color: white; text-decoration: none; padding: 13px 28px; border-radius: var(--radius); font-weight: 700; font-size: 0.95rem; transition: background 0.2s; }
+    .featured-cta:hover { background: var(--green-light); }
+    .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 16px; margin-top: 48px; }
+    .gallery-item { border-radius: 14px; overflow: hidden; position: relative; box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .gallery-item:hover img { transform: scale(1.03); }
+    .gallery-item.large { grid-row: span 2; }
+    .gallery-item.large img { height: 540px; }
+    .gallery-item.tall img { height: 260px; }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 18px 16px; background: linear-gradient(to top, rgba(27,42,59,0.85) 0%, transparent 100%); color: white; font-size: 0.88rem; font-weight: 600; }
+    .gallery-caption span { display: block; font-size: 0.75rem; font-weight: 400; opacity: 0.8; margin-top: 2px; }
+    /* TESTIMONIALS */
+    .testimonials { background: var(--gray); }
+    .testimonials-inner { max-width: 1100px; margin: 0 auto; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .testimonial-card { background: var(--white); border-radius: 14px; padding: 28px; box-shadow: var(--shadow); position: relative; }
+    .testimonial-card::before { content: '"'; position: absolute; top: 16px; right: 22px; font-size: 5rem; color: var(--green-pale); font-family: Georgia, serif; line-height: 1; }
+    .stars { color: #f59e0b; font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+    .testimonial-card p { font-size: 0.95rem; color: var(--text); line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: 12px; border-top: 1px solid #f0f0f0; padding-top: 16px; }
+    .author-avatar { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, #2d6a4f, #1b2a3b); display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 700; color: white; flex-shrink: 0; }
+    .author-info strong { display: block; font-size: 0.9rem; font-weight: 700; color: var(--navy); }
+    .author-info span { font-size: 0.8rem; color: var(--muted); }
+    .review-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--green-pale); color: var(--green); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 99px; margin-bottom: 16px; }
+    /* WHY CHOOSE US */
+    .why { background: var(--white); }
+    .why-inner { max-width: 1050px; margin: 0 auto; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .why-card { text-align: center; padding: 32px 24px; border-radius: 14px; border: 1.5px solid #e5e7eb; transition: border-color 0.2s, box-shadow 0.2s; }
+    .why-card:hover { border-color: var(--green-light); box-shadow: 0 8px 28px rgba(45,106,79,0.1); }
+    .why-icon { font-size: 2.5rem; margin-bottom: 14px; }
+    .why-card h3 { font-size: 1rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+    .why-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+    /* ABOUT */
+    .about { background: var(--gray); }
+    .about-inner { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .about-img-wrap { border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.14); position: relative; }
+    .about-img-wrap img { width: 100%; height: 420px; object-fit: cover; object-position: top; display: block; }
+    .about-img-label { position: absolute; bottom: 16px; left: 16px; background: rgba(27,42,59,0.88); color: white; padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; }
+    .about-text h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 800; color: var(--navy); margin-bottom: 16px; line-height: 1.2; }
+    .about-text p { font-size: 0.98rem; color: var(--muted); margin-bottom: 16px; line-height: 1.75; }
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 24px; }
+    .about-stat { background: var(--white); border-radius: 10px; padding: 18px; text-align: center; box-shadow: var(--shadow); }
+    .about-stat strong { display: block; font-size: 2rem; font-weight: 800; color: var(--green); }
+    .about-stat span { font-size: 0.82rem; color: var(--muted); }
+    /* HOW IT WORKS */
+    .how-inner { max-width: 960px; margin: 0 auto; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; position: relative; margin-top: 50px; }
+    .steps::before { content: ''; position: absolute; top: 36px; left: 10%; right: 10%; height: 2px; background: var(--green-pale); }
+    .step { text-align: center; position: relative; }
+    .step-num { width: 72px; height: 72px; border-radius: 50%; background: var(--green); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 800; margin: 0 auto 16px; position: relative; z-index: 1; box-shadow: 0 4px 16px rgba(45,106,79,0.35); }
+    .step h4 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .step p { font-size: 0.85rem; color: var(--muted); }
+    /* FAQ */
+    .faq { background: var(--gray); }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 40px; }
+    .faq-item { background: var(--white); border-radius: var(--radius); border: 1.5px solid #e5e7eb; overflow: hidden; }
+    .faq-q { width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; padding: 20px 22px; font-size: 1rem; font-weight: 600; color: var(--navy); background: none; border: none; cursor: pointer; gap: 16px; transition: background 0.15s; }
+    .faq-q:hover { background: var(--gray); }
+    .faq-q .arrow { flex-shrink: 0; width: 22px; height: 22px; background: var(--green-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: var(--green); font-weight: 800; transition: transform 0.2s; }
+    .faq-item.open .faq-q .arrow { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding: 0 22px; font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 20px; padding-top: 2px; }
+    /* CTA BANNER */
+    .cta-banner { background: linear-gradient(135deg, #2d6a4f 0%, #1b2a3b 100%); text-align: center; color: white; padding: 80px 5%; }
+    .cta-banner h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; margin-bottom: 14px; }
+    .cta-banner p { font-size: 1.1rem; opacity: 0.85; margin-bottom: 36px; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-white { display: inline-block; background: white; color: var(--green); text-decoration: none; padding: 16px 40px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+    .btn-outline { display: inline-block; background: transparent; color: white; text-decoration: none; padding: 15px 36px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; border: 2px solid rgba(255,255,255,0.5); transition: border-color 0.2s, background 0.2s; }
+    .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.08); }
+    /* FOOTER */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 40px 5%; text-align: center; font-size: 0.88rem; }
+    footer strong { color: white; }
+    footer a { color: rgba(255,255,255,0.65); text-decoration: none; }
+    footer a:hover { color: white; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 14px; }
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 5% 70px; }
+      .form-card { max-width: 500px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .about-inner { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .steps::before { display: none; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item.large img { height: 340px; }
+      .gallery-item.tall img { height: 240px; }
+      .featured-project { grid-template-columns: 1fr; }
+      .featured-info { padding: 28px; }
+      .featured-img-wrap { min-height: 280px; }
+    }
+    @media (max-width: 600px) {
+      .nav-phone { display: none; }
+      .hero h1 { font-size: 1.9rem; }
+      .trust-item { padding: 14px 16px; font-size: 0.82rem; }
+      .steps { grid-template-columns: 1fr; }
+      section { padding: 60px 4%; }
+      .form-card { padding: 28px 20px; }
+      .why-grid { grid-template-columns: 1fr; }
+    }
+  
+    /* MOBILE NAV TOGGLE */
+    .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 34px; height: 34px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+    .nav-toggle span { display: block; height: 3px; width: 100%; background: var(--navy); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
+    .nav-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .nav-toggle.active span:nth-child(2) { opacity: 0; }
+    .nav-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    @media (max-width: 900px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: absolute; top: 68px; left: 0; right: 0;
+        background: var(--white); flex-direction: column; align-items: stretch;
+        gap: 0; max-height: 0; overflow: hidden; opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.2s ease;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.1); border-bottom: 1px solid #e5e7eb;
+      }
+      .nav-links.open { max-height: 420px; opacity: 1; }
+      .nav-links a { width: 100%; padding: 16px 24px; border-bottom: 1px solid #f0f0f0; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Utah Backyard ADUs",
+    "url": "https://utahbackyardadus.com/",
+    "image": "https://utahbackyardadus.com/samafter.JPG",
+    "telephone": "+18019600103",
+    "email": "smlsamlewis@gmail.com",
+    "description": "Utah's ADU specialists. Custom stickbuilt, prefab modular, and garage conversion ADUs. Founder-led with 50+ ADUs of experience.",
+    "areaServed": [
+      { "@type": "City", "name": "Salt Lake City" },
+      { "@type": "City", "name": "Provo" },
+      { "@type": "City", "name": "Ogden" },
+      { "@type": "City", "name": "St. George" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "UT",
+      "addressCountry": "US"
+    },
+    "priceRange": "$50,000 - $300,000"
+  }
+  </script>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html"><span>Utah</span>BackyardADUs.com</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="models.html">Models</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="financing.html">Financing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-cta" href="contact.html">Get a Free Estimate</a>
+    </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">🏡 Utah's ADU Specialists</div>
+      <h1>Your Backyard.<br><em>Your New ADU.</em></h1>
+      <p>Custom stickbuilt, prefab modular, and garage conversion ADUs built right here in Utah. Founder-led by a 50+ ADU veteran. Get a free estimate with no pressure, no obligation.</p>
+      <div class="hero-stats">
+        <div class="stat"><strong>50+</strong><span>Built by Founder</span></div>
+        <div class="stat"><strong>3</strong><span>ADU Types Offered</span></div>
+        <div class="stat"><strong>100%</strong><span>Permitted Builds</span></div>
+      </div>
+    </div>
+    <div class="form-card" id="quote">
+      <h2>Get Your Free Estimate</h2>
+      <p>No cost, no pressure. We'll assess your property and walk you through your options.</p>
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" placeholder="(801) 555-0100" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="city">City / Area *</label>
+          <input type="text" id="city" name="city" placeholder="Salt Lake City, Provo, Ogden..." required />
+        </div>
+        <div class="form-group">
+          <label for="type">What are you interested in?</label>
+          <select id="type" name="type">
+            <option value="">-- Select an option --</option>
+            <option value="stickbuilt">Custom Stickbuilt ADU</option>
+            <option value="modular">Prefab / Modular ADU</option>
+            <option value="garage">Garage Conversion ADU</option>
+            <option value="unsure">Not sure yet, want some advice</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything else we should know? (optional)</label>
+          <textarea id="message" name="message" placeholder="Lot size, intended use, timeline, questions..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">🚀 Request My Free Estimate</button>
+        <p class="form-note">🔒 No spam, ever. We'll reach out within 1 business day.</p>
+      </form>
+      <div class="success-msg" id="successMsg">
+        <strong>✅ We got your request!</strong>
+        We'll be in touch within 1 business day to schedule your free site visit.
+      </div>
+    </div>
+  </section>
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#74c69d" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      Licensed &amp; Insured in Utah
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#74c69d" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      Full Permit &amp; Plan Services
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#74c69d" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Founder-Led | 50+ ADUs of Experience
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#74c69d" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Free Estimates, No Obligation
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#74c69d" stroke-width="2"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+      Stickbuilt | Modular | Garage Conversions
+    </div>
+  </div>
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="services-inner">
+      <div class="centered">
+        <div class="section-label">What We Build</div>
+        <h2 class="section-title">Three Ways to Add an ADU</h2>
+        <p class="section-sub">Whether you want a brand-new build or want to convert what you already have, we have the right solution for your property.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3>Custom Stickbuilt ADU</h3>
+          <p>Built on-site from the ground up, fully tailored to your lot, your style, and your goals. Maximum flexibility, maximum quality.</p>
+          <ul class="service-features">
+            <li>Fully custom floor plans &amp; layouts</li>
+            <li>Matches your home's architecture</li>
+            <li>Studio up to 3 bedrooms</li>
+            <li>Highest long-term property value</li>
+            <li>All materials sourced locally</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Prefab / Modular ADU</h3>
+          <p>Factory-built and assembled on your lot, the fastest path to a finished, permitted ADU at a lower cost. Built to the same code standards.</p>
+          <ul class="service-features">
+            <li>50-70% faster than traditional builds</li>
+            <li>Lower labor costs = better value</li>
+            <li>High-quality factory construction</li>
+            <li>Multiple pre-designed floor plans</li>
+            <li>50+ modular homes completed</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚗</div>
+          <h3>Garage Conversion ADU</h3>
+          <p>Already have a garage? Convert it into a legal, permitted living space. One of the most affordable ways to add a rental unit or guest suite.</p>
+          <ul class="service-features">
+            <li>Use what you already own</li>
+            <li>Lower cost than new construction</li>
+            <li>Detached or attached garages</li>
+            <li>Full electrical, plumbing &amp; insulation</li>
+            <li>Permitted &amp; inspected from start to finish</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- OUR WORK / GALLERY -->
+  <section class="gallery">
+    <div class="gallery-inner">
+      <div class="centered">
+        <div class="section-label">Our Work</div>
+        <h2 class="section-title">Built in Utah. Built to Last.</h2>
+        <p class="section-sub" style="margin: 0 auto;">Every ADU we build is permitted, inspected, and finished to the same standard we'd want in our own homes.</p>
+      </div>
+      <!-- FEATURED PROJECT -->
+      <div class="featured-project">
+        <div class="featured-img-wrap">
+          <img src="samafter.JPG" alt="Completed duplex with ADU in Utah" loading="lazy" />
+          <div class="featured-badge">Completed Project</div>
+        </div>
+        <div class="featured-info">
+          <div class="section-label">Featured Project</div>
+          <h3>Single-Family Home Converted to Income-Producing Duplex</h3>
+          <p>This Utah property was transformed into a fully permitted, move-in ready duplex with a separate ADU unit. The owner now generates rental income from a second unit while still living on the property or renting both sides independently.</p>
+          <p>From updated windows and fresh landscaping to full interior buildouts on both units, this project is a great example of how the right ADU addition can completely change the value and income potential of a property.</p>
+          <ul class="featured-details">
+            <li>Fully permitted duplex conversion</li>
+            <li>Separate entrance for each unit</li>
+            <li>Updated exterior: new windows, fresh landscaping</li>
+            <li>Full interior buildout on both units</li>
+            <li>Ready to rent from day one</li>
+          </ul>
+          <a href="#quote" class="featured-cta">Get a Free Estimate for Your Property</a>
+        </div>
+      </div>
+      <!-- PHOTO GRID -->
+      <div class="gallery-grid" style="margin-top: 40px;">
+        <div class="gallery-item large">
+          <img src="crane.jpg" alt="Modular ADU being set by crane on a Utah property" loading="lazy" />
+          <div class="gallery-caption">
+            Modular ADU Installation
+            <span>Crane-set modular unit, ready for foundation hookup</span>
+          </div>
+        </div>
+        <div class="gallery-item tall">
+          <img src="kitchen.jpg" alt="Custom kitchen interior inside a finished Utah ADU" loading="lazy" />
+          <div class="gallery-caption">
+            Chef's Kitchen Interior
+            <span>High-end finishes, custom cabinetry, full appliances</span>
+          </div>
+        </div>
+        <div class="gallery-item tall">
+          <img src="bathroom.jpg" alt="Luxury bathroom with gold fixtures inside a finished Utah ADU" loading="lazy" />
+          <div class="gallery-caption">
+            Spa-Style Bathroom
+            <span>Premium fixtures and tile work, fully permitted</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top: 36px;">
+        <a href="gallery.html" style="display:inline-block; background: var(--navy); color: white; text-decoration:none; padding: 14px 32px; border-radius: var(--radius); font-weight:700; font-size:0.95rem;">View Full Project Gallery →</a>
+      </div>
+    </div>
+  </section>
+  <!-- WHY CHOOSE US -->
+  <section class="why" style="background: var(--gray);">
+    <div class="why-inner">
+      <div class="centered">
+        <div class="section-label">Why Utah Backyard ADUs</div>
+        <h2 class="section-title">You're Making a Big Investment. Here's Why We're the Right Partner.</h2>
+        <p class="section-sub" style="margin: 0 auto;">We've built over 50 homes in Utah and we know what it takes to do this right from day one.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🏆</div>
+          <h3>Proven Track Record</h3>
+          <p>Our founder personally led 50+ ADU projects across Utah as Head of Sales and Project Manager at a regional builder before launching this company. That's hands-on experience you can count on.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📋</div>
+          <h3>We Handle Everything</h3>
+          <p>Design, permits, city approvals, construction, final inspection. We own every step of the process so you don't have to chase anyone down.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3>No Pressure, Ever</h3>
+          <p>Your free estimate comes with zero obligation. We show up, assess your property, and give you a straight answer. You decide what's next.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📍</div>
+          <h3>Utah-Based and Committed</h3>
+          <p>We're not a national franchise. We're a Utah company, building for Utah families, and we stand behind every project we complete.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔑</div>
+          <h3>Move-In Ready Finish</h3>
+          <p>We don't hand off a shell and disappear. Every ADU is completed, inspected, and ready to live in or rent from day one.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>Real ROI for Homeowners</h3>
+          <p>A finished ADU adds significant property value and can generate monthly rental income. We help you understand the numbers before you commit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BUILT ON EXPERIENCE / TRUST -->
+  <section class="testimonials">
+    <style>.testimonials .testimonial-card::before { display: none; } .testimonials .stars.headline { color: var(--green); letter-spacing: 0; font-size: 1.6rem; font-weight: 800; line-height: 1.2; }</style>
+    <div class="testimonials-inner">
+      <div class="centered">
+        <div class="section-label">Why You Can Trust Us</div>
+        <h2 class="section-title">A New Company. Built on 50+ ADUs of Experience.</h2>
+        <p class="section-sub" style="margin: 0 auto;">Utah Backyard ADUs is a brand-new company, but the experience behind it isn't. Here's the honest story of who's actually building your project.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="review-badge">🏗️ Founder Track Record</div>
+          <div class="stars headline">50+ ADUs Built</div>
+          <p style="font-style: normal;">Sam Lewis spent years as Head of Sales and Project Manager at a regional ADU builder, personally leading 50+ ADU projects across Utah from first call to final inspection. Same crews, same suppliers, same standards, now under direct ownership.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">📋</div>
+            <div class="author-info">
+              <strong>Hands-On, Not Hands-Off</strong>
+              <span>The founder runs every project personally</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="review-badge">✅ Verified Credentials</div>
+          <div class="stars headline">Licensed &amp; Insured</div>
+          <p style="font-style: normal;">Licensed Utah General Contractor, fully insured, and bonded. Every project permitted, inspected, and built to code, with no skipped steps and no paperwork gaps when it's time to refinance, sell, or rent the unit out.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🛡️</div>
+            <div class="author-info">
+              <strong>Permits &amp; Inspections In-House</strong>
+              <span>You won't have to call the city, ever</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="review-badge">🤝 References on Request</div>
+          <div class="stars headline">Talk to Past Clients</div>
+          <p style="font-style: normal;">Want to hear from real Utah homeowners Sam has built ADUs for in his prior role? We're happy to connect you with past clients from completed projects so you can ask them anything, before you commit a single dollar.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">📞</div>
+            <div class="author-info">
+              <strong>Just Ask</strong>
+              <span>References available during your free estimate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-inner">
+      <div class="about-img-wrap">
+        <img src="sam.jpg" alt="Sam Lewis, Founder of Utah Backyard ADUs" />
+        <div class="about-img-label">👋 Sam Lewis, Founder</div>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Meet the Owner</div>
+        <h2>50+ ADUs Behind Me. Yours Could Be Next.</h2>
+        <p>For years I worked as Head of Sales and Project Manager at a regional ADU builder here in Utah, where I personally led 50+ ADU projects from the first phone call all the way through final inspection. I learned every part of this process, what works, what doesn't, and where homeowners get burned.</p>
+        <p>I started Utah Backyard ADUs because I wanted to do this my way: honestly, hands-on, and with real accountability to the people I work with. No middlemen, no overpromising, and no disappearing once the contract is signed.</p>
+        <p>One call gets it started. I'll come out personally, walk your property, and give you a clear, no-pressure picture of what's possible.</p>
+        <div class="about-stats">
+          <div class="about-stat"><strong>50+</strong><span>Built by Founder</span></div>
+          <div class="about-stat"><strong>100%</strong><span>Permitted &amp; Inspected</span></div>
+          <div class="about-stat"><strong>3</strong><span>ADU Types Offered</span></div>
+          <div class="about-stat"><strong>$0</strong><span>Cost for Your Estimate</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HOW IT WORKS -->
+  <section style="background: var(--gray);">
+    <div class="how-inner">
+      <div class="centered">
+        <div class="section-label">Simple Process</div>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-sub" style="margin:0 auto;">From your first call to move-in day, we handle everything so you don't have to.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Free Site Visit</h4>
+          <p>We come to your property, assess your lot, and talk through your goals, completely free.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Design &amp; Permits</h4>
+          <p>We handle blueprints, city permit applications, and all required approvals on your behalf.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Construction</h4>
+          <p>Our experienced Utah crews build your ADU on time, to code, and on budget.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>Move-In Ready</h4>
+          <p>Final inspection, walkthrough, and keys in hand. Start earning rental income or housing family.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="faq-inner">
+      <div class="centered">
+        <div class="section-label">Common Questions</div>
+        <h2 class="section-title">ADU FAQ</h2>
+        <p class="section-sub" style="margin:0 auto;">Utah ADU laws have changed a lot recently. Here's what most homeowners ask us first.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is an ADU legal on my Utah property?<span class="arrow">▼</span></button>
+          <div class="faq-a">Utah state law (HB 82, 2021) requires most cities to allow ADUs on single-family lots. Salt Lake City, Provo, Ogden, St. George, and most other Utah cities now permit ADUs by right. We'll confirm your specific zoning during your free site visit, at no charge.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do I get an estimate? Is it really free?<span class="arrow">▼</span></button>
+          <div class="faq-a">100% free, no strings attached. Just fill out the form on this page and we'll reach out within 1 business day to schedule a time to visit your property, walk through your options, and give you a clear picture of what's possible. You decide what happens next.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What's the difference between stickbuilt, modular, and a garage conversion?<span class="arrow">▼</span></button>
+          <div class="faq-a">A stickbuilt ADU is built on-site from scratch: maximum customization, best long-term value. A modular ADU is built in a factory and assembled on your lot, faster and often more affordable. A garage conversion turns your existing garage into a fully livable, permitted unit, typically the most cost-effective option if you already have a usable garage.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I rent out my ADU for extra income?<span class="arrow">▼</span></button>
+          <div class="faq-a">Yes, many of our clients build ADUs specifically to generate rental income. Long-term rentals are allowed anywhere ADUs are permitted in Utah. Short-term rentals (Airbnb, VRBO) depend on your city's specific rules. We can help you understand what's allowed in your area during your free consultation.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does it take to build an ADU?<span class="arrow">▼</span></button>
+          <div class="faq-a">Garage conversions can be completed in as little as 2-3 months. Modular ADUs typically take 3-5 months from permit approval. Custom stickbuilt ADUs usually run 5-8 months. Permitting timelines vary by city (usually 4-10 weeks) and we manage all of that for you.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do I need to live on the property?<span class="arrow">▼</span></button>
+          <div class="faq-a">Utah's ADU law removed the owner-occupancy requirement statewide in 2021. You don't have to live on the property to build or rent an ADU. Some cities may still have their own local rules. We'll confirm this for your specific city as part of your free estimate.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you handle permits and inspections?<span class="arrow">▼</span></button>
+          <div class="faq-a">Absolutely, that's one of the biggest things we do for you. We handle architectural plans, permit applications, utility hookups, all required inspections, and the final certificate of occupancy. You won't have to deal with city hall at all.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you convert my garage even if it's attached to the house?<span class="arrow">▼</span></button>
+          <div class="faq-a">Yes, both attached and detached garages can often be converted into legal ADUs. We'll assess your garage's size, structure, and zoning situation during your free site visit to confirm feasibility and walk you through what the conversion would involve.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <h2>Ready to Get Started?</h2>
+    <p>Tell us about your property and we'll reach out within 1 business day to schedule a free, no-pressure site visit. Takes less than 2 minutes.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-white">Request My Free Estimate →</a>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html">Contact</a>
+      <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
+    </div>
+    <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
+    <p style="margin-top:6px;">Serving Salt Lake City, Provo, Ogden, St. George &amp; all of Utah</p>
+    <p style="margin-top:8px;">© 2026 UtahBackyardADUs.com | Licensed Utah General Contractor</p>
+  </footer>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+    // Smooth scroll
+    document.querySelectorAll('a[href="#quote"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    // Form submission via Formspree
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = this;
+      const btn = form.querySelector('.submit-btn');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      const data = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        city: document.getElementById('city').value,
+        type: document.getElementById('type').value,
+        message: document.getElementById('message').value,
+      };
+      try {
+        const res = await fetch('https://formspree.io/f/xgorerne', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          window.location.href = '/thank-you.html';
+        } else {
+          btn.textContent = 'Something went wrong -- please email smlsamlewis@gmail.com';
+          btn.disabled = false;
+        }
+      } catch(err) {
+        btn.textContent = 'Error -- please email smlsamlewis@gmail.com';
+        btn.disabled = false;
+      }
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll('.nav-toggle').forEach(function(btn){
+      var nav = btn.closest('nav');
+      var links = nav.querySelector('.nav-links');
+      btn.addEventListener('click', function(){
+        var open = links.classList.toggle('open');
+        btn.classList.toggle('active', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      links.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          links.classList.remove('open');
+          btn.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
