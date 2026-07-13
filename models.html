@@ -170,26 +170,47 @@
       {
         "@type": "Product",
         "name": "The Ridgeline ADU",
-        "description": "560 sq ft, 1 bedroom, 1 bathroom ADU with attached garage, covered porch, and open interior. Shed roofline, modern design.",
+        "description": "560 sq ft, 1 bedroom, 1 bathroom ADU with attached garage, covered porch, and open interior. Shed roofline, modern design. Available stickbuilt or modular.",
         "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
         "image": "https://utahbackyardadus.com/model1.jpg",
-        "url": "https://utahbackyardadus.com/models.html"
+        "url": "https://utahbackyardadus.com/models.html#ridgeline",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {"@type": "PriceSpecification", "minPrice": "160000", "maxPrice": "275000", "priceCurrency": "USD"},
+          "availability": "https://schema.org/InStock",
+          "url": "https://utahbackyardadus.com/contact.html"
+        }
       },
       {
         "@type": "Product",
         "name": "The Cottonwood ADU",
-        "description": "594 sq ft, 1 bedroom, 1 bathroom ADU with separate bedroom, full bath, dedicated kitchen, and office nook.",
+        "description": "594 sq ft, 1 bedroom, 1 bathroom ADU with separate bedroom, full bath, dedicated kitchen, and office nook. Available stickbuilt or modular.",
         "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
         "image": "https://utahbackyardadus.com/model2.jpg",
-        "url": "https://utahbackyardadus.com/models.html"
+        "url": "https://utahbackyardadus.com/models.html#cottonwood",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {"@type": "PriceSpecification", "minPrice": "160000", "maxPrice": "275000", "priceCurrency": "USD"},
+          "availability": "https://schema.org/InStock",
+          "url": "https://utahbackyardadus.com/contact.html"
+        }
       },
       {
         "@type": "Product",
         "name": "The Park City ADU",
-        "description": "960 sq ft, 2 bedroom, 1 bathroom ADU, our largest model, with spacious living/dining area, full kitchen, back porch, and entry porch.",
+        "description": "960 sq ft, 2 bedroom, 1 bathroom ADU, our largest model, with spacious living/dining area, full kitchen, back porch, and entry porch. Available stickbuilt or modular.",
         "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
         "image": "https://utahbackyardadus.com/model3.jpg",
-        "url": "https://utahbackyardadus.com/models.html"
+        "url": "https://utahbackyardadus.com/models.html#park-city",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {"@type": "PriceSpecification", "minPrice": "160000", "maxPrice": "275000", "priceCurrency": "USD"},
+          "availability": "https://schema.org/InStock",
+          "url": "https://utahbackyardadus.com/contact.html"
+        }
       },
       {
         "@type": "Product",
@@ -197,7 +218,7 @@
         "description": "748 sq ft, 2 bedroom, 1 bathroom fully custom, on-site stickbuilt ADU with covered front porch, gable roof, Hardie fiber cement siding, and 3-zone mini-split system.",
         "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
         "image": "https://utahbackyardadus.com/model4.jpg",
-        "url": "https://utahbackyardadus.com/models.html",
+        "url": "https://utahbackyardadus.com/models.html#wasatch",
         "offers": {
           "@type": "Offer",
           "price": "220000",
@@ -212,7 +233,7 @@
         "description": "480 sq ft, 1 bedroom, 1 bathroom entry-level modular ADU, factory-built to Utah code, with standing seam metal roof, Hardie siding, quartz counters, and 2-zone mini-split system.",
         "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
         "image": "https://utahbackyardadus.com/model5.jpg",
-        "url": "https://utahbackyardadus.com/models.html",
+        "url": "https://utahbackyardadus.com/models.html#juniper",
         "offers": {
           "@type": "Offer",
           "price": "120943",
@@ -267,17 +288,45 @@
   <!-- MODELS -->
   <section class="models-section">
     <div class="models-inner">
+
+      <!-- QUICK COMPARISON -->
+      <style>
+        .model-card { scroll-margin-top: 90px; }
+        .compare-wrap { overflow-x: auto; margin-bottom: 50px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .model-compare { width: 100%; border-collapse: collapse; background: #fff; min-width: 560px; }
+        .model-compare th, .model-compare td { padding: 14px 16px; text-align: left; font-size: 0.88rem; border-bottom: 1px solid #eef0f2; white-space: nowrap; }
+        .model-compare th { background: var(--navy); color: #fff; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.4px; }
+        .model-compare tbody tr:last-child td { border-bottom: none; }
+        .model-compare tbody tr:hover td { background: var(--green-pale); }
+        .model-compare a.compare-link { color: var(--green); font-weight: 700; text-decoration: none; }
+        .model-compare a.compare-link:hover { text-decoration: underline; }
+      </style>
+      <div class="compare-wrap">
+        <table class="model-compare">
+          <thead>
+            <tr><th>Model</th><th>Construction</th><th>Bed / Bath</th><th>Sq Ft</th><th>Starting At</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>The Ridgeline</strong></td><td>Stickbuilt or Modular</td><td>1 / 1</td><td>560</td><td>$160,000</td><td><a class="compare-link" href="#ridgeline">View &rarr;</a></td></tr>
+            <tr><td><strong>The Cottonwood</strong></td><td>Stickbuilt or Modular</td><td>1 / 1</td><td>594</td><td>$160,000</td><td><a class="compare-link" href="#cottonwood">View &rarr;</a></td></tr>
+            <tr><td><strong>The Park City</strong></td><td>Stickbuilt or Modular</td><td>2 / 1</td><td>960</td><td>$160,000</td><td><a class="compare-link" href="#park-city">View &rarr;</a></td></tr>
+            <tr><td><strong>The Wasatch</strong></td><td>Custom Stickbuilt</td><td>2 / 1</td><td>748</td><td>$220,000</td><td><a class="compare-link" href="#wasatch">View &rarr;</a></td></tr>
+            <tr><td><strong>The Juniper</strong></td><td>Modular</td><td>1 / 1</td><td>480</td><td>$120,943</td><td><a class="compare-link" href="#juniper">View &rarr;</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="models-grid">
 
         <!-- MODEL 1: The Ridgeline - Modern with Garage 560 sqft -->
-        <div class="model-card">
+        <div class="model-card" id="ridgeline">
           <div class="model-images">
             <img class="model-main-img" src="model1.jpg" alt="The Ridgeline ADU - Modern unit with garage" />
             <div class="model-tag">Most Popular</div>
           </div>
           <div class="model-info">
             <div class="model-name">The Ridgeline</div>
-            <div class="model-sqft">560 sq ft total | Modern Shed Roof</div>
+            <div class="model-sqft">560 sq ft total | 1 Bed, 1 Bath | Stickbuilt or Modular</div>
             <div class="model-specs">
               <div class="spec-box"><strong>1</strong><span>Bedroom</span></div>
               <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
@@ -292,19 +341,21 @@
               <li>Modern shed roof exterior design</li>
               <li>Available in stickbuilt or modular</li>
             </ul>
+            <div class="model-price">Starting at <strong>$160,000</strong> <span style="font-size:0.7rem; color: var(--muted); font-weight:600;">(up to $275,000 depending on options &amp; upgrades)</span></div>
             <a href="contact.html" class="model-cta">Get a Free Estimate</a>
+            <p class="model-note">Image shown is a 3D concept rendering from engineered plans, not a completed project photo.</p>
           </div>
         </div>
 
         <!-- MODEL 2: The Cottonwood - 1 Bed 594 sqft -->
-        <div class="model-card reverse">
+        <div class="model-card reverse" id="cottonwood">
           <div class="model-images">
             <img class="model-main-img" src="model2.jpg" alt="The Cottonwood ADU - 1 bedroom 594 sq ft" />
             <div class="model-tag">Great for Rentals</div>
           </div>
           <div class="model-info">
             <div class="model-name">The Cottonwood</div>
-            <div class="model-sqft">594 sq ft | 1 Bedroom</div>
+            <div class="model-sqft">594 sq ft total | 1 Bed, 1 Bath | Stickbuilt or Modular</div>
             <div class="model-specs">
               <div class="spec-box"><strong>1</strong><span>Bedroom</span></div>
               <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
@@ -319,19 +370,21 @@
               <li>Modern exterior in gray and wood tones</li>
               <li>Available in stickbuilt or modular</li>
             </ul>
+            <div class="model-price">Starting at <strong>$160,000</strong> <span style="font-size:0.7rem; color: var(--muted); font-weight:600;">(up to $275,000 depending on options &amp; upgrades)</span></div>
             <a href="contact.html" class="model-cta">Get a Free Estimate</a>
+            <p class="model-note">Image shown is a 3D concept rendering from engineered plans, not a completed project photo.</p>
           </div>
         </div>
 
         <!-- MODEL 3: The Park City - 2 Bed 960 sqft -->
-        <div class="model-card">
+        <div class="model-card" id="park-city">
           <div class="model-images">
             <img class="model-main-img" src="model3.jpg" alt="The Park City ADU - 2 bedroom 960 sq ft" />
             <div class="model-tag">Best Value</div>
           </div>
           <div class="model-info">
             <div class="model-name">The Park City</div>
-            <div class="model-sqft">960 sq ft total | 2 Bedroom</div>
+            <div class="model-sqft">960 sq ft total | 2 Bed, 1 Bath | Stickbuilt or Modular</div>
             <div class="model-specs">
               <div class="spec-box"><strong>2</strong><span>Bedrooms</span></div>
               <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
@@ -344,21 +397,24 @@
               <li>Open dining and living room</li>
               <li>Back porch and entry porch</li>
               <li>Stone and wood accent exterior</li>
+              <li>Available in stickbuilt or modular</li>
               <li>Highest rental income potential</li>
             </ul>
+            <div class="model-price">Starting at <strong>$160,000</strong> <span style="font-size:0.7rem; color: var(--muted); font-weight:600;">(up to $275,000 depending on options &amp; upgrades)</span></div>
             <a href="contact.html" class="model-cta">Get a Free Estimate</a>
+            <p class="model-note">Image shown is a 3D concept rendering from engineered plans, not a completed project photo.</p>
           </div>
         </div>
 
         <!-- MODEL 4: The Wasatch - 2 Bed 748 sqft Stickbuilt -->
-        <div class="model-card reverse">
+        <div class="model-card reverse" id="wasatch">
           <div class="model-images">
             <img class="model-main-img" src="model4.jpg" alt="The Wasatch ADU - 2 bedroom 748 sq ft custom stickbuilt concept rendering" />
             <div class="model-tag">New Floor Plan</div>
           </div>
           <div class="model-info">
             <div class="model-name">The Wasatch</div>
-            <div class="model-sqft">748 sq ft | 2 Bedroom | Custom Stickbuilt</div>
+            <div class="model-sqft">748 sq ft total | 2 Bed, 1 Bath | Custom Stickbuilt</div>
             <div class="model-specs">
               <div class="spec-box"><strong>2</strong><span>Bedrooms</span></div>
               <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
@@ -380,14 +436,14 @@
         </div>
 
         <!-- MODEL 5: The Juniper - 1 Bed 480 sqft Modular -->
-        <div class="model-card">
+        <div class="model-card" id="juniper">
           <div class="model-images">
             <img class="model-main-img" src="model5.jpg" alt="The Juniper ADU - 480 sq ft one-bedroom modular concept rendering" />
             <div class="model-tag">Most Affordable</div>
           </div>
           <div class="model-info">
             <div class="model-name">The Juniper</div>
-            <div class="model-sqft">480 sq ft | 1 Bedroom | Modular</div>
+            <div class="model-sqft">480 sq ft total | 1 Bed, 1 Bath | Modular</div>
             <div class="model-specs">
               <div class="spec-box"><strong>1</strong><span>Bedroom</span></div>
               <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
