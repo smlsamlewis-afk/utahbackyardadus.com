@@ -12,6 +12,7 @@
   <meta property="og:url" content="https://utahbackyardadus.com/index.html" />
   <meta property="og:image" content="https://utahbackyardadus.com/samafter.JPG" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://utahbackyardadus.com/samafter.JPG" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
   <script>
@@ -266,7 +267,25 @@
       "addressRegion": "UT",
       "addressCountry": "US"
     },
-    "priceRange": "$50,000 - $300,000"
+    "priceRange": "$50,000 - $300,000",
+    "founder": {"@type": "Person", "name": "Sam Lewis"},
+    "sameAs": ["https://www.google.com/maps/place/Utah+Backyard+ADUs/data=!4m2!3m1!1s0x0:0xb872b5bbc4512197"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Is an ADU legal on my Utah property?", "acceptedAnswer": {"@type": "Answer", "text": "Utah state law (HB 82, 2021) requires most cities to allow ADUs on single-family lots. Salt Lake City, Provo, Ogden, St. George, and most other Utah cities now permit ADUs by right. We'll confirm your specific zoning during your free site visit, at no charge."}},
+      {"@type": "Question", "name": "How do I get an estimate? Is it really free?", "acceptedAnswer": {"@type": "Answer", "text": "100% free, no strings attached. Just fill out the form on this page and we'll reach out within 1 business day to schedule a time to visit your property, walk through your options, and give you a clear picture of what's possible. You decide what happens next."}},
+      {"@type": "Question", "name": "What's the difference between stickbuilt, modular, and a garage conversion?", "acceptedAnswer": {"@type": "Answer", "text": "A stickbuilt ADU is built on-site from scratch: maximum customization, best long-term value. A modular ADU is built in a factory and assembled on your lot, faster and often more affordable. A garage conversion turns your existing garage into a fully livable, permitted unit, typically the most cost-effective option if you already have a usable garage."}},
+      {"@type": "Question", "name": "Can I rent out my ADU for extra income?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, many of our clients build ADUs specifically to generate rental income. Long-term rentals are allowed anywhere ADUs are permitted in Utah. Short-term rentals (Airbnb, VRBO) depend on your city's specific rules. We can help you understand what's allowed in your area during your free consultation."}},
+      {"@type": "Question", "name": "How long does it take to build an ADU?", "acceptedAnswer": {"@type": "Answer", "text": "Garage conversions can be completed in as little as 2-3 months. Modular ADUs typically take 3-5 months from permit approval. Custom stickbuilt ADUs usually run 5-8 months. Permitting timelines vary by city (usually 4-10 weeks) and we manage all of that for you."}},
+      {"@type": "Question", "name": "Do I need to live on the property?", "acceptedAnswer": {"@type": "Answer", "text": "Utah's ADU law removed the owner-occupancy requirement statewide in 2021. You don't have to live on the property to build or rent an ADU. Some cities may still have their own local rules. We'll confirm this for your specific city as part of your free estimate."}},
+      {"@type": "Question", "name": "Do you handle permits and inspections?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely, that's one of the biggest things we do for you. We handle architectural plans, permit applications, utility hookups, all required inspections, and the final certificate of occupancy. You won't have to deal with city hall at all."}},
+      {"@type": "Question", "name": "Can you convert my garage even if it's attached to the house?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, both attached and detached garages can often be converted into legal ADUs. We'll assess your garage's size, structure, and zoning situation during your free site visit to confirm feasibility and walk you through what the conversion would involve."}}
+    ]
   }
   </script>
 </head>
@@ -677,6 +696,7 @@
       <a href="models.html">Models</a>
       <a href="contact.html">Contact</a>
       <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
+      <a href="https://www.google.com/maps/place/Utah+Backyard+ADUs/data=!4m2!3m1!1s0x0:0xb872b5bbc4512197" target="_blank" rel="noopener">Reviews</a>
     </div>
     <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
     <p style="margin-top:6px;">Serving Salt Lake City, Provo, Ogden, St. George &amp; all of Utah</p>
@@ -751,5 +771,19 @@
       });
     });
   </script>
+  <style>
+    .mobile-sticky-cta { display: none; }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 500; background: #fff; border-top: 1px solid #e5e7eb; box-shadow: 0 -4px 20px rgba(0,0,0,0.12); }
+      .mobile-sticky-cta a { flex: 1; text-align: center; padding: 14px 8px; font-weight: 700; font-size: 0.92rem; text-decoration: none; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+      .mobile-sticky-cta .msc-call { color: #1b2a3b; border-right: 1px solid #e5e7eb; }
+      .mobile-sticky-cta .msc-estimate { background: #2d6a4f; color: #fff; }
+      body { padding-bottom: 58px; }
+    }
+  </style>
+  <div class="mobile-sticky-cta">
+    <a href="tel:8019600103" class="msc-call">📞 Call Now</a>
+    <a href="#quote" class="msc-estimate">Get Free Estimate</a>
+  </div>
 </body>
 </html>

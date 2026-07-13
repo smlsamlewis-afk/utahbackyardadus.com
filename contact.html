@@ -12,6 +12,7 @@
   <meta property="og:url" content="https://utahbackyardadus.com/contact.html" />
   <meta property="og:image" content="https://utahbackyardadus.com/samafter.JPG" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://utahbackyardadus.com/samafter.JPG" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
   <script>
@@ -127,6 +128,16 @@
       .nav-links a { width: 100%; padding: 16px 24px; border-bottom: 1px solid #f0f0f0; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://utahbackyardadus.com/index.html"},
+      {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://utahbackyardadus.com/contact.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- NAV -->
@@ -269,6 +280,7 @@
       <a href="models.html">Models</a>
       <a href="contact.html">Contact</a>
       <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
+      <a href="https://www.google.com/maps/place/Utah+Backyard+ADUs/data=!4m2!3m1!1s0x0:0xb872b5bbc4512197" target="_blank" rel="noopener">Reviews</a>
     </div>
     <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
     <p style="margin-top:6px;">Serving Salt Lake City, Provo, Ogden, St. George &amp; all of Utah</p>
@@ -325,5 +337,19 @@
       });
     });
   </script>
+  <style>
+    .mobile-sticky-cta { display: none; }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 500; background: #fff; border-top: 1px solid #e5e7eb; box-shadow: 0 -4px 20px rgba(0,0,0,0.12); }
+      .mobile-sticky-cta a { flex: 1; text-align: center; padding: 14px 8px; font-weight: 700; font-size: 0.92rem; text-decoration: none; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+      .mobile-sticky-cta .msc-call { color: #1b2a3b; border-right: 1px solid #e5e7eb; }
+      .mobile-sticky-cta .msc-estimate { background: #2d6a4f; color: #fff; }
+      body { padding-bottom: 58px; }
+    }
+  </style>
+  <div class="mobile-sticky-cta">
+    <a href="tel:8019600103" class="msc-call">📞 Call Now</a>
+    <a href="#leadForm" class="msc-estimate">Get Free Estimate</a>
+  </div>
 </body>
 </html>
