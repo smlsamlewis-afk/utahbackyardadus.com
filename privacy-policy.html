@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Utah Backyard ADUs</title>
+  <meta name="description" content="Privacy policy for Utah Backyard ADUs. Learn what information we collect through our free estimate form and how it's used." />
+  <link rel="canonical" href="https://utahbackyardadus.com/privacy-policy.html" />
+  <meta name="robots" content="noindex, follow" />
+  <meta property="og:title" content="Privacy Policy | Utah Backyard ADUs" />
+  <meta property="og:description" content="Privacy policy for Utah Backyard ADUs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://utahbackyardadus.com/privacy-policy.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18090287887"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18090287887');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #2d6a4f;
+      --green-light: #40916c;
+      --green-pale: #d8f3dc;
+      --navy: #1b2a3b;
+      --gray: #f7f8fa;
+      --text: #1e2a38;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.09);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--white); border-bottom: 1px solid #e5e7eb;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+    }
+    .nav-logo { font-size: 1.15rem; font-weight: 700; color: var(--green); text-decoration: none; }
+    .nav-logo span { color: var(--navy); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { text-decoration: none; color: var(--navy); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--green); }
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .nav-phone { font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.95rem; }
+    .nav-phone:hover { color: var(--green); }
+    .nav-cta { background: var(--green); color: var(--white); text-decoration: none; padding: 10px 22px; border-radius: var(--radius); font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--green-light); }
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(135deg, #1b2a3b 0%, #2d6a4f 100%); padding: 60px 5%; color: white; text-align: center; }
+    .page-hero .badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #d8f3dc; padding: 5px 14px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 16px; text-transform: uppercase; }
+    .page-hero h1 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; margin-bottom: 14px; }
+    .page-hero p { font-size: 1.05rem; opacity: 0.85; max-width: 600px; margin: 0 auto; }
+    /* LEGAL CONTENT */
+    .legal-section { padding: 60px 5% 90px; background: var(--gray); }
+    .legal-inner { max-width: 780px; margin: 0 auto; background: var(--white); border-radius: 16px; padding: 48px 44px; box-shadow: var(--shadow); }
+    .legal-inner p { color: var(--text); margin-bottom: 16px; font-size: 0.98rem; }
+    .legal-inner h2 { font-size: 1.2rem; font-weight: 800; color: var(--navy); margin: 32px 0 12px; }
+    .legal-inner h2:first-of-type { margin-top: 0; }
+    .legal-inner ul { margin: 0 0 16px 22px; }
+    .legal-inner li { margin-bottom: 8px; font-size: 0.98rem; }
+    .legal-inner a { color: var(--green); font-weight: 600; }
+    .updated-note { font-size: 0.85rem; color: var(--muted); margin-bottom: 28px; }
+    /* FOOTER */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 40px 5%; text-align: center; font-size: 0.88rem; }
+    footer strong { color: white; }
+    footer a { color: rgba(255,255,255,0.65); text-decoration: none; }
+    footer a:hover { color: white; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 14px; }
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .nav-phone { display: none; }
+      .legal-inner { padding: 32px 22px; }
+    }
+    /* MOBILE NAV TOGGLE */
+    .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 34px; height: 34px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+    .nav-toggle span { display: block; height: 3px; width: 100%; background: var(--navy); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
+    .nav-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .nav-toggle.active span:nth-child(2) { opacity: 0; }
+    .nav-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    @media (max-width: 900px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: absolute; top: 68px; left: 0; right: 0;
+        background: var(--white); flex-direction: column; align-items: stretch;
+        gap: 0; max-height: 0; overflow: hidden; opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.2s ease;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.1); border-bottom: 1px solid #e5e7eb;
+      }
+      .nav-links.open { max-height: 420px; opacity: 1; }
+      .nav-links a { width: 100%; padding: 16px 24px; border-bottom: 1px solid #f0f0f0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html"><span>Utah</span>BackyardADUs.com</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="financing.html">Financing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:8019600103">📞 (801) 960-0103</a>
+      <a class="nav-cta" href="contact.html">Get a Free Estimate</a>
+    </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>What we collect when you use this site, and how it's used.</p>
+  </div>
+  <!-- LEGAL SECTION -->
+  <section class="legal-section">
+    <div class="legal-inner">
+      <p class="updated-note">Last updated: July 20, 2026</p>
+
+      <h2>Who We Are</h2>
+      <p>Utah Backyard ADUs ("we," "us," "our") is a licensed Utah general contractor building accessory dwelling units. This policy explains what information we collect through utahbackyardadus.com and how we use it. If you have questions, contact us at <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>.</p>
+
+      <h2>Information We Collect</h2>
+      <p>When you submit our free estimate form, we collect the information you provide: your name, phone number, email address, city or area, the type of ADU you're interested in, and any additional notes you include. We don't ask for or collect payment information on this site.</p>
+
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To contact you about your free estimate request and schedule a property visit</li>
+        <li>To follow up about your project if you choose to move forward</li>
+        <li>To answer questions you send us directly by phone or email</li>
+      </ul>
+      <p>We do not sell your personal information, and we do not share it with third parties for their own marketing purposes.</p>
+
+      <h2>Form Processing</h2>
+      <p>Estimate requests submitted through this site are processed by Formspree, a third-party form-handling service, and delivered to us by email. Formspree's own privacy practices apply to that transmission; see <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree's privacy policy</a> for details.</p>
+
+      <h2>Analytics & Advertising</h2>
+      <p>We use Google Ads conversion tracking (Google's gtag.js) to understand which visits to this site result in a form submission. This helps us measure whether our advertising is working; it does not give us access to your personal browsing history on other sites. You can opt out of personalized advertising through your <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">Google Ad Settings</a>, and most browsers let you block third-party cookies entirely.</p>
+
+      <h2>Cookies</h2>
+      <p>This site uses standard cookies associated with the Google Ads tag described above. We don't currently use cookies for any other tracking or personalization.</p>
+
+      <h2>Your Choices</h2>
+      <p>You can ask us to delete the contact information you've submitted at any time by emailing <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>. We'll remove it from our records except where we're required to keep it (for example, signed contracts or permit paperwork tied to a completed project).</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>If we change how we collect or use information, we'll update this page and the "last updated" date above.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy or your information? Email <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a> or call <a href="tel:8019600103">(801) 960-0103</a>.</p>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:8019600103">(801) 960-0103</a>
+      <a href="mailto:smlsamlewis@gmail.com">smlsamlewis@gmail.com</a>
+      <a href="https://www.google.com/maps/place/Utah+Backyard+ADUs/data=!4m2!3m1!1s0x0:0xb872b5bbc4512197" target="_blank" rel="noopener">Reviews</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <p><strong>Utah Backyard ADUs</strong> | Custom Stickbuilt | Modular | Garage Conversions</p>
+    <p style="margin-top:6px;">Serving Salt Lake City, Provo, Ogden, St. George &amp; all of Utah</p>
+    <p style="margin-top:8px;">© 2026 UtahBackyardADUs.com | Licensed Utah General Contractor</p>
+  </footer>
+  <script>
+    document.querySelectorAll('.nav-toggle').forEach(function(btn){
+      var nav = btn.closest('nav');
+      var links = nav.querySelector('.nav-links');
+      btn.addEventListener('click', function(){
+        var open = links.classList.toggle('open');
+        btn.classList.toggle('active', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      links.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          links.classList.remove('open');
+          btn.classList.remove('active');
+        });
+      });
+    });
+  </script>
+  <style>
+    .mobile-sticky-cta { display: none; }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 500; background: #fff; border-top: 1px solid #e5e7eb; box-shadow: 0 -4px 20px rgba(0,0,0,0.12); }
+      .mobile-sticky-cta a { flex: 1; text-align: center; padding: 14px 8px; font-weight: 700; font-size: 0.92rem; text-decoration: none; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+      .mobile-sticky-cta .msc-call { color: #1b2a3b; border-right: 1px solid #e5e7eb; }
+      .mobile-sticky-cta .msc-estimate { background: #2d6a4f; color: #fff; }
+      body { padding-bottom: 58px; }
+    }
+  </style>
+  <div class="mobile-sticky-cta">
+    <a href="tel:8019600103" class="msc-call">📞 Call Now</a>
+    <a href="contact.html" class="msc-estimate">Get Free Estimate</a>
+  </div>
+</body>
+</html>
