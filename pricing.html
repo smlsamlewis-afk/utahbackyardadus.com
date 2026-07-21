@@ -108,6 +108,17 @@
     .disclaimer { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 12px; padding: 20px 24px; margin-top: 40px; font-size: 0.88rem; color: #92400e; line-height: 1.65; }
     .disclaimer strong { display: block; margin-bottom: 4px; font-size: 0.9rem; }
 
+    /* FAQ */
+    .faq-section { background: var(--gray); }
+    .faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: var(--white); border-radius: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); overflow: hidden; }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; cursor: pointer; font-weight: 600; font-size: 0.97rem; color: var(--navy); user-select: none; gap: 16px; }
+    .faq-q:hover { color: var(--green); }
+    .faq-icon { flex-shrink: 0; font-size: 1.1rem; color: var(--green); transition: transform 0.25s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-a-inner { padding: 0 24px 20px; font-size: 0.92rem; color: var(--muted); line-height: 1.75; }
+    .faq-item.open .faq-a { max-height: 300px; }
     /* CTA BANNER */
     .cta-banner { background: linear-gradient(135deg, #2d6a4f 0%, #1b2a3b 100%); text-align: center; color: white; padding: 80px 5%; }
     .cta-banner h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; margin-bottom: 14px; }
@@ -190,6 +201,17 @@
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://utahbackyardadus.com/index.html"},
       {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://utahbackyardadus.com/pricing.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What affects the final price of an ADU in Utah?", "acceptedAnswer": {"@type": "Answer", "text": "The main factors are size and square footage, build type (garage conversion, modular, or custom stickbuilt), site preparation needs, finishes and materials, permit fees (typically $3,000 to $12,000 depending on the municipality), and utility connection costs. A free site visit gives you the most accurate number for your specific property."}},
+      {"@type": "Question", "name": "What kind of return can I expect on an ADU in Utah?", "acceptedAnswer": {"@type": "Answer", "text": "Utah ADUs are renting for roughly $1,200 to $2,500 a month depending on size, location, and finishes, especially in Salt Lake City and Park City. Most owners recoup their investment through rental income within 5 to 10 years, and a finished, permitted ADU can add 20 to 30% to a home's value on top of the rental income."}},
+      {"@type": "Question", "name": "Which ADU type costs the least in Utah?", "acceptedAnswer": {"@type": "Answer", "text": "A garage conversion is typically the most affordable, ranging from $50,000 to $120,000, since you're working with an existing structure and avoiding foundation and framing costs. Modular ADUs run $120,000 to $200,000, and custom stickbuilt ADUs run $120,000 to $300,000."}}
     ]
   }
   </script>
@@ -305,7 +327,7 @@
           <div class="factor-icon">🏗️</div>
           <div>
             <h4>Build Type</h4>
-            <p>Modular ADUs are faster and typically less expensive than custom stickbuilt. Garage conversions are the most affordable since you're working with an existing structure.</p>
+            <p>Modular ADUs are faster and typically less expensive than custom stickbuilt. Garage conversions are the most affordable since you're working with an existing structure. See our <a href="blog-modular-vs-stickbuilt-adu.html" style="color: var(--green); font-weight: 600;">modular vs. stickbuilt comparison</a> for a full breakdown.</p>
           </div>
         </div>
         <div class="factor-card">
@@ -326,7 +348,7 @@
           <div class="factor-icon">📋</div>
           <div>
             <h4>Permits and Fees</h4>
-            <p>City permit fees in Utah typically range from $3,000 to $12,000 depending on the municipality. We handle all permitting and these fees are included in your estimate.</p>
+            <p>City permit fees in Utah typically range from $3,000 to $12,000 depending on the municipality. We handle all permitting and these fees are included in your estimate. Rules vary by city &mdash; see our <a href="blog-utah-adu-laws-hb82-sb284-explained.html" style="color: var(--green); font-weight: 600;">Utah ADU law guide</a> for details.</p>
           </div>
         </div>
         <div class="factor-card">
@@ -366,6 +388,28 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="section-inner">
+      <div class="section-label">Common Questions</div>
+      <h2 class="section-title">Pricing FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">What affects the final price of an ADU in Utah? <span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">The main factors are size and square footage, build type (garage conversion, modular, or custom stickbuilt), site preparation needs, finishes and materials, permit fees (typically $3,000 to $12,000 depending on the municipality), and utility connection costs. A free site visit gives you the most accurate number for your specific property.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What kind of return can I expect on an ADU in Utah? <span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">Utah ADUs are renting for roughly $1,200 to $2,500 a month depending on size, location, and finishes, especially in Salt Lake City and Park City. Most owners recoup their investment through rental income within 5 to 10 years, and a finished, permitted ADU can add 20 to 30% to a home's value on top of the rental income.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Which ADU type costs the least in Utah? <span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">A garage conversion is typically the most affordable, ranging from $50,000 to $120,000, since you're working with an existing structure and avoiding foundation and framing costs. Modular ADUs run $120,000 to $200,000, and custom stickbuilt ADUs run $120,000 to $300,000.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-banner">
     <h2>Get an Accurate Number for Your Property</h2>
@@ -394,6 +438,15 @@
   </footer>
 
 
+  <script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.querySelector('.faq-q').addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
   <script>
     document.querySelectorAll('.nav-toggle').forEach(function(btn){
       var nav = btn.closest('nav');
