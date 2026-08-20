@@ -74,6 +74,9 @@
     .model-images { position: relative; min-height: 420px; }
     .model-main-img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .model-tag { position: absolute; top: 18px; left: 18px; background: var(--green); color: white; font-size: 0.78rem; font-weight: 700; padding: 6px 14px; border-radius: 99px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .model-floorplan { margin-top: 24px; padding-top: 24px; border-top: 1px solid #eef0f2; }
+    .model-floorplan img { width: 100%; border-radius: 10px; display: block; }
+    .model-floorplan figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 8px; text-align: center; }
     .model-info { padding: 48px 44px; display: flex; flex-direction: column; justify-content: center; }
     .model-name { font-size: clamp(1.4rem, 2vw, 1.8rem); font-weight: 800; color: var(--navy); margin-bottom: 8px; }
     .model-sqft { font-size: 0.88rem; font-weight: 600; color: var(--green); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 18px; }
@@ -241,6 +244,20 @@
           "availability": "https://schema.org/InStock",
           "url": "https://utahbackyardadus.com/contact.html"
         }
+      },
+      {
+        "@type": "Product",
+        "name": "The Euro ADU",
+        "description": "480 sq ft, 1 bedroom, 1 bathroom custom stickbuilt ADU with a bold, modern dark exterior and a floor-to-ceiling glass slider opening onto a covered patio.",
+        "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
+        "image": "https://utahbackyardadus.com/euro-exterior.jpg",
+        "url": "https://utahbackyardadus.com/models.html#euro",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://utahbackyardadus.com/contact.html"
+        }
       }
     ]
   }
@@ -313,6 +330,7 @@
             <tr><td><strong>The Park City</strong></td><td>Stickbuilt or Modular</td><td>2 / 1</td><td>960</td><td>$160,000</td><td><a class="compare-link" href="#park-city">View &rarr;</a></td></tr>
             <tr><td><strong>The Wasatch</strong></td><td>Custom Stickbuilt</td><td>2 / 1</td><td>748</td><td>$220,000</td><td><a class="compare-link" href="#wasatch">View &rarr;</a></td></tr>
             <tr><td><strong>The Juniper</strong></td><td>Modular</td><td>1 / 1</td><td>480</td><td>$120,943</td><td><a class="compare-link" href="#juniper">View &rarr;</a></td></tr>
+            <tr><td><strong>The Euro</strong></td><td>Custom Stickbuilt</td><td>1 / 1</td><td>480</td><td>Contact Us</td><td><a class="compare-link" href="#euro">View &rarr;</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -462,6 +480,39 @@
             <div class="model-price">Starting at <strong>$120,943</strong> <span style="font-size:0.7rem; color: var(--muted); font-weight:600;">(~$252/sq ft)</span></div>
             <a href="contact.html" class="model-cta">Get a Free Estimate for the Juniper</a>
             <p class="model-note">Image shown is a 3D concept rendering from engineered plans, not a completed project photo.</p>
+          </div>
+        </div>
+
+        <!-- MODEL 6: The Euro - 1 Bed 480 sqft Custom Stickbuilt -->
+        <div class="model-card reverse" id="euro">
+          <div class="model-images" style="align-self: start; position: sticky; top: 90px;">
+            <img class="model-main-img" src="euro-exterior.jpg" alt="The Euro ADU - 480 sq ft one-bedroom custom stickbuilt concept rendering with modern dark exterior" width="1100" height="511" style="object-position: 55% 42%;" />
+            <div class="model-tag">New Design</div>
+          </div>
+          <div class="model-info">
+            <div class="model-name">The Euro</div>
+            <div class="model-sqft">480 sq ft total | 1 Bed, 1 Bath | Custom Stickbuilt</div>
+            <div class="model-specs">
+              <div class="spec-box"><strong>1</strong><span>Bedroom</span></div>
+              <div class="spec-box"><strong>1</strong><span>Bathroom</span></div>
+              <div class="spec-box"><strong>480</strong><span>Total sq ft</span></div>
+            </div>
+            <p class="model-desc">A compact, design-forward 480 sq ft one-bedroom ADU built with the same custom stickbuilt craftsmanship as our other models, dressed in a bold, modern dark exterior. A full-width glass slider opens the bedroom straight onto a covered patio, blurring the line between indoor and outdoor living &mdash; a strong fit for a backyard guest suite, home office, or standalone rental.</p>
+            <ul class="model-features">
+              <li>480 sq ft custom stickbuilt construction</li>
+              <li>Modern dark exterior siding with clean architectural lines</li>
+              <li>Floor-to-ceiling glass slider opening to a covered patio</li>
+              <li>Open-concept bedroom and living area</li>
+              <li>Spa-style bathroom with dual vanity</li>
+              <li>Fully engineered floor plan, available for review during your free estimate</li>
+            </ul>
+            <div class="model-price">Contact for Pricing <span style="font-size:0.7rem; color: var(--muted); font-weight:600;">(our newest design &mdash; ask for details)</span></div>
+            <a href="contact.html" class="model-cta">Get a Free Estimate for the Euro</a>
+            <p class="model-note">Image and floor plan shown are 3D concept renderings from design plans, not a completed project photo. Patio furnishings, string lighting, yard games, and pool shown are lifestyle staging for illustration only and are not included in the base ADU package.</p>
+            <figure class="model-floorplan">
+              <img src="euro-floorplan.jpg" alt="The Euro ADU floor plan concept - 480 sq ft one-bedroom layout" width="1100" height="735" loading="lazy" />
+              <figcaption>Concept floor plan &mdash; final layout engineered to your lot during design</figcaption>
+            </figure>
           </div>
         </div>
 
