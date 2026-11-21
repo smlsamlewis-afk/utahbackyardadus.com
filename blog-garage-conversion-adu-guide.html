@@ -144,6 +144,29 @@
     ]
   }
   </script>
+
+  <style>
+    .law-bar { background:#f4c542; color:#1b2a3b; text-align:center; padding:10px 5%; font-size:.93rem; font-weight:600; line-height:1.45; }
+    .law-bar a { color:#1b2a3b; font-weight:800; text-decoration:underline; white-space:nowrap; }
+    @media (max-width:1300px) and (min-width:901px) { .nav-links { gap:16px !important; } .nav-links a { font-size:.86rem !important; } }
+  </style>
+
+  <style>
+    .lead-box { background: linear-gradient(135deg,#1b2a3b 0%,#2d6a4f 100%); color:#fff; border-radius:14px; padding:30px 28px; margin:36px 0; box-shadow:0 10px 30px rgba(0,0,0,.15); }
+    .lead-box h2, .lead-box h3 { color:#fff !important; margin:0 0 8px !important; font-size:1.4rem !important; }
+    .lead-box p.lead-sub { color:#d8f3dc !important; margin:0 0 18px !important; font-size:.97rem !important; line-height:1.6 !important; }
+    .lead-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .lead-grid .full { grid-column:1 / -1; }
+    .lead-box input, .lead-box select, .lead-box textarea { width:100%; padding:12px 14px; border-radius:8px; border:none; font-size:.97rem; font-family:inherit; color:#1e2a38; }
+    .lead-box button { width:100%; background:#f4c542; color:#1b2a3b; border:none; padding:15px; border-radius:8px; font-weight:800; font-size:1.05rem; cursor:pointer; margin-top:4px; }
+    .lead-box button:hover { background:#ffd65c; }
+    .lead-fine { font-size:.8rem !important; color:#cfe8d6 !important; margin:10px 0 0 !important; text-align:center; }
+    .mid-cta { display:flex; gap:16px; align-items:center; background:#d8f3dc; border:1px solid #b7e4c7; border-radius:12px; padding:18px 20px; margin:30px 0; }
+    .mid-cta .mc-icon { font-size:1.9rem; flex-shrink:0; }
+    .mid-cta p { margin:0 !important; font-size:.97rem !important; line-height:1.55 !important; color:#1b2a3b !important; }
+    .mid-cta a.mc-btn { display:inline-block; margin-top:8px; background:#2d6a4f; color:#fff !important; padding:9px 16px; border-radius:8px; text-decoration:none; font-weight:700; font-size:.92rem; }
+    @media (max-width:600px){ .lead-grid { grid-template-columns:1fr; } .mid-cta { flex-direction:column; align-items:flex-start; } }
+  </style>
 </head>
 <body>
   <nav>
@@ -153,6 +176,7 @@
       <a href="models.html">Models</a>
       <a href="gallery.html">Gallery</a>
       <a href="pricing.html">Pricing</a>
+      <a href="adu-cost-calculator.html">Cost Calculator</a>
       <a href="financing.html">Financing</a>
       <a href="blog.html" class="active">Blog</a>
       <a href="contact.html">Contact</a>
@@ -165,6 +189,7 @@
       <span></span><span></span><span></span>
     </button>
   </nav>
+  <div class="law-bar">🆕 New Utah law (Oct. 1, 2026): most cities must now allow a backyard ADU on lots 11,000+ sq ft. <a href="adu-lot-check.html">Check your lot free &rarr;</a></div>
   <div class="page-hero">
     <div class="badge">ADU Guide</div>
     <h1>Garage Conversion ADU: What's Really Involved (Cost, Code, Timeline)</h1>
@@ -184,6 +209,7 @@
         <h2 id="ceiling-height-requirements">Ceiling Height Requirements</h2>
         <p>Building code requires habitable rooms to have a minimum finished ceiling height of 7 feet across at least half the room's floor area, with a reduced 6'8" minimum allowed in bathrooms and similar spaces. Many garages were built with lower ceiling heights than this, especially older ones, which can mean adjusting the roof structure or excavating the slab, both of which add cost and complexity beyond simply insulating and drywalling.</p>
 
+        <div class="mid-cta"><div class="mc-icon">💲</div><div><p><strong>What would an ADU cost on your property?</strong> Get an instant ballpark for a garage conversion, modular, or custom ADU, based on real Utah project pricing.</p><a class="mc-btn" href="adu-cost-calculator.html">Try the Cost Calculator &rarr;</a></div></div>
         <h2 id="egress-window-requirements">Egress Window Requirements</h2>
         <p>Any room used as a sleeping area needs a code-compliant emergency egress opening: a minimum 20 inches wide, 24 inches tall, at least 5.7 square feet of net clear opening, with a sill no higher than 44 inches above the floor. A code-compliant exterior door (at least 32 inches wide and 78 inches tall) can also satisfy this in some layouts. Garages typically have a single large garage-door opening and maybe one small side window, neither of which meets egress requirements as-is, so cutting a new, properly sized window opening into the wall is standard scope on almost every garage conversion.</p>
 
@@ -201,6 +227,27 @@
         <p>One upside worth knowing if you're in an HOA: an attached garage conversion is typically treated as an internal ADU, which HOAs have much less power to block than a detached backyard unit. See <a href="blog-adu-hoa-rules-utah.html">Can Your HOA Stop You From Building an ADU in Utah?</a> for the distinction.</p>
 
     
+
+        <div class="lead-box" id="free-check">
+          <h2>Get a Free ADU Feasibility Check</h2>
+          <p class="lead-sub">Tell us where your property is. We'll check your lot size, zoning, and your city's current ADU rules, then give you a straight answer on what you can build and a ballpark price. No pressure, no obligation.</p>
+          <form class="lead-form">
+            <input type="hidden" name="source" value="Guide: garage-conversion-adu-guide">
+            <div class="lead-grid">
+              <input type="text" name="name" placeholder="Full name *" required autocomplete="name">
+              <input type="tel" name="phone" placeholder="Phone *" required autocomplete="tel">
+              <input class="full" type="email" name="email" placeholder="Email *" required autocomplete="email">
+              <input class="full" type="text" name="address" placeholder="Property address or city *" required autocomplete="street-address">
+              <select class="full" name="interest">
+                <option value="">What are you most interested in?</option>
+                <option>Detached backyard ADU</option><option>Garage conversion</option>
+                <option>Basement / internal ADU</option><option>Modular / prefab ADU</option><option>Not sure yet</option>
+              </select>
+            </div>
+            <button type="submit">Get My Free Feasibility Check &rarr;</button>
+            <p class="lead-fine">Free, no obligation. Sam or our team will reach out within 1 business day. Licensed Utah GC #14296577-5501.</p>
+          </form>
+        </div>
         <div class="author-box"><img src="sam.jpg" alt="Sam Lewis, founder of Utah Backyard ADUs" width="64" height="64" loading="lazy"><p><strong>About the author:</strong> Sam Lewis is the founder of Utah Backyard ADUs and a licensed Utah general contractor (License #14296577-5501). He has led 50+ ADU projects and builds custom stickbuilt, modular, and garage-conversion ADUs across Salt Lake County, Utah County, Ogden, and Park City. <a href="contact.html">Request a free estimate</a>.</p></div>
       </div>
   </section>
@@ -208,7 +255,7 @@
     <h2>Ready to See What's Possible on Your Property?</h2>
     <p>Free site visit, straight answers, no pressure.</p>
     <div class="cta-buttons">
-      <a href="contact.html" class="btn-white">Get a Free Estimate</a>
+      <a href="#free-check" class="btn-white">Get a Free Feasibility Check</a>
       <a href="tel:8019600103" class="btn-outline">📞 Call (801) 960-0103</a>
     </div>
   </section>
@@ -258,5 +305,24 @@
     <a href="tel:8019600103" class="msc-call">📞 Call Now</a>
     <a href="contact.html" class="msc-estimate">Get Free Estimate</a>
   </div>
+
+  <script>
+    document.querySelectorAll('form.lead-form').forEach(function(form){
+      form.addEventListener('submit', async function(e){
+        e.preventDefault();
+        var btn = form.querySelector('button'); var label = btn.textContent;
+        btn.textContent = 'Sending...'; btn.disabled = true;
+        var data = {}; new FormData(form).forEach(function(v,k){ data[k]=v; });
+        data.page = location.pathname;
+        if (window.extraLeadData) { Object.assign(data, window.extraLeadData()); }
+        try {
+          var res = await fetch('https://formspree.io/f/xgorerne', { method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(data) });
+          if (res.ok) { window.location.href = '/thank-you.html'; return; }
+          btn.textContent = 'Something went wrong. Please call (801) 960-0103';
+        } catch(err) { btn.textContent = 'Error. Please call (801) 960-0103'; }
+        btn.disabled = false; setTimeout(function(){ btn.textContent = label; }, 4000);
+      });
+    });
+  </script>
 </body>
 </html>

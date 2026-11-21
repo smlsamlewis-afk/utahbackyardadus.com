@@ -25,7 +25,18 @@ Salt Lake County (including Salt Lake City), Utah County (including Provo), Ogde
 - Ogden ADU Builder (https://utahbackyardadus.com/adu-builder-ogden.html): local permitting rules and free estimate
 - Blog (https://utahbackyardadus.com/blog.html): guides on Utah ADU law (HB82/SB284), costs, modular vs. stickbuilt, and financing
 
+## Free tools
+- ADU Cost Calculator (https://utahbackyardadus.com/adu-cost-calculator.html): instant ballpark cost for garage conversion, modular, or custom stickbuilt ADUs in Utah
+- Does My Lot Qualify? (https://utahbackyardadus.com/adu-lot-check.html): six-question check of ADU eligibility under Utah Code 10-21-303 and 10-21-304
+
+## Utah ADU law summary (as of November 2026)
+- Internal ADUs (within the home's footprint) are a permitted use in Utah residential zones (Utah Code 10-21-303, originally HB82, 2021). Cities may prohibit them on lots of 6,000 sq ft or less, require one extra parking space, prohibit rentals under 30 days, and prohibit renting one in a home that is not the owner's primary residence.
+- Detached ADUs: as of Oct. 1, 2026, SB284 (Utah Code 10-21-304) requires most larger Utah cities to allow a detached ADU as a permitted use on single-family lots of 11,000 sq ft or more. Cities cannot require a conditional use permit in residential zones or more than 2 parking spaces (units 650+ sq ft) / 1 space (smaller). Cities may regulate size, height, setbacks, lot coverage, owner occupancy, one ADU per lot, and rentals under 90 days.
+- HOAs may still prohibit detached ADUs but generally cannot ban internal ADUs.
+- Full guide: https://utahbackyardadus.com/blog-utah-detached-adu-law-sb284-2026.html
+
 ## Guides (blog)
+- Utah's New Detached ADU Law (SB284): What Changed Oct. 1, 2026 (https://utahbackyardadus.com/blog-utah-detached-adu-law-sb284-2026.html): what SB284 requires, what cities can still restrict, city-by-city examples, and how to check your lot
 - Aging in Place: Designing an ADU for Multigenerational Living (https://utahbackyardadus.com/blog-adu-aging-in-place-multigenerational.html): Design features that matter most when building an ADU for aging parents or multigenerational family living in Utah.
 - Can Your HOA Stop You From Building an ADU in Utah? (https://utahbackyardadus.com/blog-adu-hoa-rules-utah.html): Utah law limits what an HOA can do about an internal ADU, but detached backyard ADUs are a different story. Here's exactly what your HOA can and can't restrict.
 - ADU Insurance: What Utah Homeowners Need to Know Before Renting It Out (https://utahbackyardadus.com/blog-adu-insurance-guide.html): How insuring an ADU works, when your existing homeowners policy stops being enough, and what landlord insurance actually covers.
