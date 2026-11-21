@@ -138,10 +138,95 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://utahbackyardadus.com/index.html"},
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://utahbackyardadus.com/"},
       {"@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://utahbackyardadus.com/gallery.html"}
     ]
   }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Utah Backyard ADUs Project Gallery",
+  "url": "https://utahbackyardadus.com/gallery.html",
+  "author": {
+    "@id": "https://utahbackyardadus.com/#business"
+  },
+  "image": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/samafter.JPG",
+      "caption": "Duplex Conversion — Completed Project",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/progress-exterior-modern.jpg",
+      "caption": "Modern Shed-Roof ADU — Black Standing-Seam Siding & Cedar Soffit, Southern Utah",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/finished-entry.jpg",
+      "caption": "Near-Complete Exterior — Covered Entry & Board-and-Batten Siding",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/progress-framing.jpg",
+      "caption": "Framing Complete — Covered Patio & ADU Structure",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/progress-framing2.jpg",
+      "caption": "Framing in Progress — Full Structure with Carport",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/progress-roofing.jpg",
+      "caption": "Roof Sheathing in Progress",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/crane.jpg",
+      "caption": "Modular ADU Installation — Crane Set",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/kitchen.jpg",
+      "caption": "Custom Kitchen Interior",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://utahbackyardadus.com/bathroom.jpg",
+      "caption": "Spa-Style Bathroom Finish",
+      "creator": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -186,7 +271,7 @@
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <button class="lightbox-close" id="lightboxClose">&times;</button>
-    <img id="lightboxImg" src="" alt="" />
+    <img id="lightboxImg" src="" alt="Enlarged project photo" />
     <div class="lightbox-caption" id="lightboxCaption"></div>
   </div>
 
@@ -233,9 +318,11 @@
        and in the "All" filter automatically.
     ============================================================
   -->
+<noscript><ul class="noscript-gallery"><li><img src="samafter.JPG" alt="Duplex Conversion — Completed Project" loading="lazy" width="400"><br>Duplex Conversion — Completed Project</li><li><img src="progress-exterior-modern.jpg" alt="Modern Shed-Roof ADU — Black Standing-Seam Siding &amp; Cedar Soffit, Southern Utah" loading="lazy" width="400"><br>Modern Shed-Roof ADU — Black Standing-Seam Siding &amp; Cedar Soffit, Southern Utah</li><li><img src="finished-entry.jpg" alt="Near-Complete Exterior — Covered Entry &amp; Board-and-Batten Siding" loading="lazy" width="400"><br>Near-Complete Exterior — Covered Entry &amp; Board-and-Batten Siding</li><li><img src="progress-framing.jpg" alt="Framing Complete — Covered Patio &amp; ADU Structure" loading="lazy" width="400"><br>Framing Complete — Covered Patio &amp; ADU Structure</li><li><img src="progress-framing2.jpg" alt="Framing in Progress — Full Structure with Carport" loading="lazy" width="400"><br>Framing in Progress — Full Structure with Carport</li><li><img src="progress-roofing.jpg" alt="Roof Sheathing in Progress" loading="lazy" width="400"><br>Roof Sheathing in Progress</li><li><img src="crane.jpg" alt="Modular ADU Installation — Crane Set" loading="lazy" width="400"><br>Modular ADU Installation — Crane Set</li><li><img src="kitchen.jpg" alt="Custom Kitchen Interior" loading="lazy" width="400"><br>Custom Kitchen Interior</li><li><img src="bathroom.jpg" alt="Spa-Style Bathroom Finish" loading="lazy" width="400"><br>Spa-Style Bathroom Finish</li></ul></noscript>
   <script>
     const PROJECTS = [
       { src: "samafter.JPG", caption: "Duplex Conversion — Completed Project", category: "completed" },
+      { src: "progress-exterior-modern.jpg", caption: "Modern Shed-Roof ADU — Black Standing-Seam Siding & Cedar Soffit, Southern Utah", category: "exterior" },
       { src: "finished-entry.jpg", caption: "Near-Complete Exterior — Covered Entry & Board-and-Batten Siding", category: "exterior" },
       { src: "progress-framing.jpg", caption: "Framing Complete — Covered Patio & ADU Structure", category: "progress" },
       { src: "progress-framing2.jpg", caption: "Framing in Progress — Full Structure with Carport", category: "progress" },

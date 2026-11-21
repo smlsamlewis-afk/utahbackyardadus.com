@@ -167,107 +167,146 @@
     }
   </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "The Ridgeline ADU",
-        "description": "560 sq ft, 1 bedroom, 1 bathroom ADU with attached garage, covered porch, and open interior. Shed roofline, modern design. Available stickbuilt or modular.",
-        "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
-        "image": "https://utahbackyardadus.com/model1.jpg",
-        "url": "https://utahbackyardadus.com/models.html#ridgeline",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "USD",
-          "priceSpecification": {"@type": "PriceSpecification", "minPrice": "160000", "maxPrice": "275000", "priceCurrency": "USD"},
-          "availability": "https://schema.org/InStock",
-          "url": "https://utahbackyardadus.com/contact.html"
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "The Ridgeline ADU",
+      "description": "560 sq ft, 1 bedroom, 1 bathroom ADU with attached garage, covered porch, and open interior. Shed roofline, modern design. Available stickbuilt or modular.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Utah Backyard ADUs"
       },
-      {
-        "@type": "Product",
-        "name": "The Cottonwood ADU",
-        "description": "594 sq ft, 1 bedroom, 1 bathroom ADU with separate bedroom, full bath, dedicated kitchen, and office nook. Available stickbuilt or modular.",
-        "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
-        "image": "https://utahbackyardadus.com/model2.jpg",
-        "url": "https://utahbackyardadus.com/models.html#cottonwood",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "USD",
-          "priceSpecification": {"@type": "PriceSpecification", "minPrice": "160000", "maxPrice": "275000", "priceCurrency": "USD"},
-          "availability": "https://schema.org/InStock",
-          "url": "https://utahbackyardadus.com/contact.html"
-        }
+      "image": "https://utahbackyardadus.com/model1.jpg",
+      "url": "https://utahbackyardadus.com/models.html#ridgeline",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "160000",
+        "highPrice": "275000",
+        "availability": "https://schema.org/InStock",
+        "url": "https://utahbackyardadus.com/contact.html"
       },
-      {
-        "@type": "Product",
-        "name": "The Park City ADU",
-        "description": "960 sq ft, 2 bedroom, 1 bathroom ADU, our largest model, with spacious living/dining area, full kitchen, back porch, and entry porch. Available stickbuilt or modular.",
-        "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
-        "image": "https://utahbackyardadus.com/model3.jpg",
-        "url": "https://utahbackyardadus.com/models.html#park-city",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "USD",
-          "priceSpecification": {"@type": "PriceSpecification", "minPrice": "160000", "maxPrice": "275000", "priceCurrency": "USD"},
-          "availability": "https://schema.org/InStock",
-          "url": "https://utahbackyardadus.com/contact.html"
-        }
-      },
-      {
-        "@type": "Product",
-        "name": "The Wasatch ADU",
-        "description": "748 sq ft, 2 bedroom, 1 bathroom fully custom, on-site stickbuilt ADU with covered front porch, gable roof, Hardie fiber cement siding, and 3-zone mini-split system.",
-        "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
-        "image": "https://utahbackyardadus.com/model4.jpg",
-        "url": "https://utahbackyardadus.com/models.html#wasatch",
-        "offers": {
-          "@type": "Offer",
-          "price": "220000",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://utahbackyardadus.com/contact.html"
-        }
-      },
-      {
-        "@type": "Product",
-        "name": "The Juniper ADU",
-        "description": "480 sq ft, 1 bedroom, 1 bathroom entry-level modular ADU, factory-built to Utah code, with standing seam metal roof, Hardie siding, quartz counters, and 2-zone mini-split system.",
-        "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
-        "image": "https://utahbackyardadus.com/model5.jpg",
-        "url": "https://utahbackyardadus.com/models.html#juniper",
-        "offers": {
-          "@type": "Offer",
-          "price": "120943",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://utahbackyardadus.com/contact.html"
-        }
-      },
-      {
-        "@type": "Product",
-        "name": "The Euro ADU",
-        "description": "480 sq ft, 1 bedroom, 1 bathroom custom stickbuilt ADU with a bold, modern dark exterior and a floor-to-ceiling glass slider opening onto a covered patio.",
-        "brand": {"@type": "Brand", "name": "Utah Backyard ADUs"},
-        "image": "https://utahbackyardadus.com/euro-exterior.jpg",
-        "url": "https://utahbackyardadus.com/models.html#euro",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://utahbackyardadus.com/contact.html"
-        }
+      "manufacturer": {
+        "@id": "https://utahbackyardadus.com/#business"
       }
-    ]
-  }
+    },
+    {
+      "@type": "Product",
+      "name": "The Cottonwood ADU",
+      "description": "594 sq ft, 1 bedroom, 1 bathroom ADU with separate bedroom, full bath, dedicated kitchen, and office nook. Available stickbuilt or modular.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Utah Backyard ADUs"
+      },
+      "image": "https://utahbackyardadus.com/model2.jpg",
+      "url": "https://utahbackyardadus.com/models.html#cottonwood",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "160000",
+        "highPrice": "275000",
+        "availability": "https://schema.org/InStock",
+        "url": "https://utahbackyardadus.com/contact.html"
+      },
+      "manufacturer": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "The Park City ADU",
+      "description": "960 sq ft, 2 bedroom, 1 bathroom ADU, our largest model, with spacious living/dining area, full kitchen, back porch, and entry porch. Available stickbuilt or modular.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Utah Backyard ADUs"
+      },
+      "image": "https://utahbackyardadus.com/model3.jpg",
+      "url": "https://utahbackyardadus.com/models.html#park-city",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "160000",
+        "highPrice": "275000",
+        "availability": "https://schema.org/InStock",
+        "url": "https://utahbackyardadus.com/contact.html"
+      },
+      "manufacturer": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "The Wasatch ADU",
+      "description": "748 sq ft, 2 bedroom, 1 bathroom fully custom, on-site stickbuilt ADU with covered front porch, gable roof, Hardie fiber cement siding, and 3-zone mini-split system.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Utah Backyard ADUs"
+      },
+      "image": "https://utahbackyardadus.com/model4.jpg",
+      "url": "https://utahbackyardadus.com/models.html#wasatch",
+      "offers": {
+        "@type": "Offer",
+        "price": "220000",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://utahbackyardadus.com/contact.html"
+      },
+      "manufacturer": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "The Juniper ADU",
+      "description": "480 sq ft, 1 bedroom, 1 bathroom entry-level modular ADU, factory-built to Utah code, with standing seam metal roof, Hardie siding, quartz counters, and 2-zone mini-split system.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Utah Backyard ADUs"
+      },
+      "image": "https://utahbackyardadus.com/model5.jpg",
+      "url": "https://utahbackyardadus.com/models.html#juniper",
+      "offers": {
+        "@type": "Offer",
+        "price": "120943",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://utahbackyardadus.com/contact.html"
+      },
+      "manufacturer": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "The Euro ADU",
+      "description": "480 sq ft, 1 bedroom, 1 bathroom custom stickbuilt ADU with a bold, modern dark exterior and a floor-to-ceiling glass slider opening onto a covered patio.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Utah Backyard ADUs"
+      },
+      "image": "https://utahbackyardadus.com/euro-exterior.jpg",
+      "url": "https://utahbackyardadus.com/models.html#euro",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://utahbackyardadus.com/contact.html"
+      },
+      "manufacturer": {
+        "@id": "https://utahbackyardadus.com/#business"
+      }
+    }
+  ]
+}
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://utahbackyardadus.com/index.html"},
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://utahbackyardadus.com/"},
       {"@type": "ListItem", "position": 2, "name": "Models", "item": "https://utahbackyardadus.com/models.html"}
     ]
   }

@@ -13,7 +13,7 @@ Utah Backyard ADUs designs, permits, and builds backyard accessory dwelling unit
 Salt Lake County (including Salt Lake City), Utah County (including Provo), Ogden, Park City, and surrounding Utah communities.
 
 ## Key pages
-- Home (https://utahbackyardadus.com/index.html): overview, FAQ, free estimate form
+- Home (https://utahbackyardadus.com/): overview, FAQ, free estimate form
 - Models (https://utahbackyardadus.com/models.html): 6 floor plans - The Ridgeline (560 sqft, 1bd), The Cottonwood (594 sqft, 1bd), The Park City (960 sqft, 2bd), The Wasatch (748 sqft, 2bd, custom stickbuilt, starting at $220,000), The Juniper (480 sqft, 1bd, modular, starting at $120,943), The Euro (480 sqft, 1bd, custom stickbuilt, contact for pricing)
 - Pricing (https://utahbackyardadus.com/pricing.html): cost breakdown by ADU type
 - Financing (https://utahbackyardadus.com/financing.html): HELOC / home equity financing guide and FAQ
@@ -24,18 +24,30 @@ Salt Lake County (including Salt Lake City), Utah County (including Provo), Ogde
 - Park City ADU Builder (https://utahbackyardadus.com/adu-builder-park-city.html): local permitting rules and free estimate
 - Ogden ADU Builder (https://utahbackyardadus.com/adu-builder-ogden.html): local permitting rules and free estimate
 - Blog (https://utahbackyardadus.com/blog.html): guides on Utah ADU law (HB82/SB284), costs, modular vs. stickbuilt, and financing
-- The ADU Permitting Process in Utah: A Step-by-Step Guide (https://utahbackyardadus.com/blog-adu-permitting-process-utah.html)
-- Does an ADU Increase Your Property Value? What the Data Shows (https://utahbackyardadus.com/blog-does-an-adu-increase-property-value.html)
-- ADU Insurance: What Utah Homeowners Need to Know Before Renting It Out (https://utahbackyardadus.com/blog-adu-insurance-guide.html)
-- How to Choose an ADU Builder in Utah: A 10-Point Checklist (https://utahbackyardadus.com/blog-how-to-choose-an-adu-builder.html)
-- ADU Utility Hookups: Water, Sewer, Electric & Gas Explained (https://utahbackyardadus.com/blog-adu-utility-hookups.html)
-- Garage Conversion ADU: What's Really Involved (Cost, Code, Timeline) (https://utahbackyardadus.com/blog-garage-conversion-adu-guide.html)
-- 7 Common ADU Mistakes Utah Homeowners Make (and How to Avoid Them) (https://utahbackyardadus.com/blog-common-adu-mistakes.html)
-- ADU Tax Implications: Rental Income, Depreciation & Deductions (https://utahbackyardadus.com/blog-adu-tax-implications.html)
-- The Best Time of Year to Build an ADU in Utah (https://utahbackyardadus.com/blog-best-time-of-year-to-build-adu-utah.html)
-- Aging in Place: Designing an ADU for Multigenerational Living (https://utahbackyardadus.com/blog-adu-aging-in-place-multigenerational.html)
-- Can Your HOA Stop You From Building an ADU in Utah? (https://utahbackyardadus.com/blog-adu-hoa-rules-utah.html)
-- Renting Out Your ADU in Utah: A Landlord's Basics (https://utahbackyardadus.com/blog-renting-out-adu-landlord-basics-utah.html)
+
+## Guides (blog)
+- Aging in Place: Designing an ADU for Multigenerational Living (https://utahbackyardadus.com/blog-adu-aging-in-place-multigenerational.html): Design features that matter most when building an ADU for aging parents or multigenerational family living in Utah.
+- Can Your HOA Stop You From Building an ADU in Utah? (https://utahbackyardadus.com/blog-adu-hoa-rules-utah.html): Utah law limits what an HOA can do about an internal ADU, but detached backyard ADUs are a different story. Here's exactly what your HOA can and can't restrict.
+- ADU Insurance: What Utah Homeowners Need to Know Before Renting It Out (https://utahbackyardadus.com/blog-adu-insurance-guide.html): How insuring an ADU works, when your existing homeowners policy stops being enough, and what landlord insurance actually covers.
+- The ADU Permitting Process in Utah: A Step-by-Step Guide (https://utahbackyardadus.com/blog-adu-permitting-process-utah.html): What actually happens between deciding to build an ADU and getting your certificate of occupancy in Utah — every step, in order.
+- ADU Tax Implications: Rental Income, Depreciation & Deductions (https://utahbackyardadus.com/blog-adu-tax-implications.html): A plain-English overview of how renting out an ADU affects your taxes, including depreciation rules, passive loss limits, and property tax reassessment.
+- ADU Utility Hookups: Water, Sewer, Electric & Gas Explained (https://utahbackyardadus.com/blog-adu-utility-hookups.html): How water, sewer, electrical, and gas typically get connected for a Utah ADU, and what drives the cost up or down.
+- The Best Time of Year to Build an ADU in Utah (https://utahbackyardadus.com/blog-best-time-of-year-to-build-adu-utah.html): How Utah's four-season climate affects ADU permitting, foundation work, framing, and interior finishing, and when to actually start your project.
+- 7 Common ADU Mistakes Utah Homeowners Make (and How to Avoid Them) (https://utahbackyardadus.com/blog-common-adu-mistakes.html): The most common, avoidable mistakes we see Utah homeowners make when planning an ADU, from skipping the zoning check to underbudgeting utilities.
+- Does an ADU Increase Your Property Value? What the Data Shows (https://utahbackyardadus.com/blog-does-an-adu-increase-property-value.html): A look at what national and regional data shows about ADUs and home value, and why permitting status is the single biggest factor.
+- Garage Conversion ADU: What's Really Involved (Cost, Code, Timeline) (https://utahbackyardadus.com/blog-garage-conversion-adu-guide.html): What actually happens when you convert a garage into a legal ADU in Utah, including ceiling height, egress window rules, and realistic cost and timeline.
+- HELOC vs. Construction Loan: How to Finance Your Utah ADU (https://utahbackyardadus.com/blog-heloc-vs-construction-loan-adu-financing.html): A quick overview of the two most common ways Utah homeowners finance an ADU — HELOC and construction loans — and how to know which fits your situation.
+- How Much Does an ADU Cost in Utah? 2026 Price Breakdown (https://utahbackyardadus.com/blog-how-much-does-an-adu-cost-in-utah.html): Real 2026 Utah ADU cost ranges by build type — garage conversion, modular, and custom stickbuilt — plus what actually moves the price.
+- How to Choose an ADU Builder in Utah: A 10-Point Checklist (https://utahbackyardadus.com/blog-how-to-choose-an-adu-builder.html): What to actually check before hiring an ADU builder in Utah — license, insurance, contract structure, and the questions most homeowners forget to ask.
+- Modular vs. Stickbuilt ADU: Which Is Right for Your Utah Property? (https://utahbackyardadus.com/blog-modular-vs-stickbuilt-adu.html): Modular and custom stickbuilt ADUs both meet the same Utah building code — here's how they actually differ on cost, timeline, and value.
+- Renting Out Your ADU in Utah: A Landlord's Basics (https://utahbackyardadus.com/blog-renting-out-adu-landlord-basics-utah.html): What Utah law actually requires once you rent out your ADU: security deposits, notice periods, and the disclosure most new landlords miss.
+- Is an ADU Legal in Utah? HB82, SB284, and What's Changed (https://utahbackyardadus.com/blog-utah-adu-laws-hb82-sb284-explained.html): A plain-English guide to Utah's ADU laws: HB82 (2021), the 2026 update under SB284, and what's still up to your city.
+
+## About the founder
+Sam Lewis founded Utah Backyard ADUs and is a licensed Utah general contractor (License #14296577-5501). He has led 50+ ADU projects and self-performs many trades.
+
+## Full content
+- Full-text version of this site for AI assistants: https://utahbackyardadus.com/llms-full.txt
 
 ## Contact
 Phone: (801) 960-0103
