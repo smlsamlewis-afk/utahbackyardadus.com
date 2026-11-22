@@ -10,7 +10,7 @@ Utah Backyard ADUs designs, permits, and builds backyard accessory dwelling unit
 - Custom stickbuilt ADU: $120,000-$300,000
 
 ## Service area
-Salt Lake County (including Salt Lake City), Utah County (including Provo), Ogden, Park City, and surrounding Utah communities.
+Salt Lake County (including Salt Lake City), Utah County (including Provo, Orem, Lehi, and American Fork), Ogden, Park City, and surrounding Utah communities.
 
 ## Key pages
 - Home (https://utahbackyardadus.com/): overview, FAQ, free estimate form
@@ -22,6 +22,9 @@ Salt Lake County (including Salt Lake City), Utah County (including Provo), Ogde
 - Salt Lake City ADU Builder (https://utahbackyardadus.com/adu-builder-salt-lake-city.html): local permitting rules and free estimate
 - Provo ADU Builder (https://utahbackyardadus.com/adu-builder-provo.html): local permitting rules and free estimate
 - Park City ADU Builder (https://utahbackyardadus.com/adu-builder-park-city.html): local permitting rules and free estimate
+- American Fork ADU Builder (https://utahbackyardadus.com/adu-builder-american-fork.html): American Fork detached ADU rules under SB284 and free estimate
+- Orem ADU Builder (https://utahbackyardadus.com/adu-builder-orem.html): Orem detached ADU rules under SB284 and free estimate
+- Lehi ADU Builder (https://utahbackyardadus.com/adu-builder-lehi.html): Lehi detached ADU rules under SB284 and free estimate
 - Ogden ADU Builder (https://utahbackyardadus.com/adu-builder-ogden.html): local permitting rules and free estimate
 - Blog (https://utahbackyardadus.com/blog.html): guides on Utah ADU law (HB82/SB284), costs, modular vs. stickbuilt, and financing
 

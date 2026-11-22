@@ -240,7 +240,7 @@
             <div class="lead-grid">
               <input type="text" name="name" placeholder="Full name *" required autocomplete="name">
               <input type="tel" name="phone" placeholder="Phone *" required autocomplete="tel">
-              <input class="full" type="email" name="email" placeholder="Email *" required autocomplete="email">
+              <input class="full" type="email" name="email" placeholder="Email (optional)" autocomplete="email">
               <input class="full" type="text" name="address" placeholder="Property address or city *" required autocomplete="street-address">
               <select class="full" name="interest">
                 <option value="">What are you most interested in?</option>
@@ -306,7 +306,8 @@
     }
   </style>
   <div class="mobile-sticky-cta">
-    <a href="tel:8019600103" class="msc-call">📞 Call Now</a>
+    <a href="tel:8019600103" class="msc-call">📞 Call</a>
+    <a href="sms:8019600103?&body=Hi%2C%20I%27m%20interested%20in%20an%20ADU%20for%20my%20property.%20My%20address%20is%3A%20" class="msc-call">💬 Text</a>
     <a href="contact.html" class="msc-estimate">Get Free Estimate</a>
   </div>
 
@@ -327,6 +328,34 @@
         btn.disabled = false; setTimeout(function(){ btn.textContent = label; }, 4000);
       });
     });
+  </script>
+
+  <style>
+    .lot-slide { position:fixed; right:18px; bottom:18px; width:320px; max-width:calc(100% - 36px); background:#fff; border-radius:14px; box-shadow:0 12px 40px rgba(0,0,0,.25); padding:18px 18px 16px; z-index:600; transform:translateY(140%); transition:transform .4s ease; border-top:5px solid #f4c542; font-family:'Segoe UI',system-ui,-apple-system,sans-serif; }
+    .lot-slide.show { transform:translateY(0); }
+    .lot-slide b { display:block; color:#1b2a3b; font-size:1.02rem; margin-bottom:6px; }
+    .lot-slide p { font-size:.9rem; color:#4b5563; line-height:1.5; margin:0 0 12px; }
+    .lot-slide a.go { display:block; text-align:center; background:#2d6a4f; color:#fff; padding:11px; border-radius:8px; font-weight:800; text-decoration:none; }
+    .lot-slide .x { position:absolute; top:6px; right:10px; background:none; border:none; font-size:1.3rem; color:#9ca3af; cursor:pointer; }
+    @media (max-width:768px) { .lot-slide { bottom:70px; right:12px; } }
+  </style>
+  <div class="lot-slide" id="lotSlide" role="dialog" aria-label="Free ADU lot check">
+    <button class="x" aria-label="Close" onclick="document.getElementById('lotSlide').classList.remove('show');try{localStorage.setItem('lotSlideClosed','1')}catch(e){}">&times;</button>
+    <b>📐 Could your lot qualify?</b>
+    <p>Utah's new law opened up backyard ADUs on lots 11,000+ sq ft in most cities. Find out in 60 seconds.</p>
+    <a class="go" href="adu-lot-check.html">Check My Lot Free &rarr;</a>
+  </div>
+  <script>
+    (function(){
+      var shown=false, el=document.getElementById('lotSlide');
+      try { if (localStorage.getItem('lotSlideClosed')) return; } catch(e) {}
+      function check(){
+        if (shown) return;
+        var h=document.documentElement, pct=(h.scrollTop||document.body.scrollTop)/((h.scrollHeight-h.clientHeight)||1);
+        if (pct>0.45) { shown=true; el.classList.add('show'); window.removeEventListener('scroll',check); }
+      }
+      window.addEventListener('scroll',check,{passive:true});
+    })();
   </script>
 </body>
 </html>
