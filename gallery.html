@@ -447,10 +447,13 @@
       try { if (localStorage.getItem('lotSlideClosed')) return; } catch(e) {}
       function check(){
         if (shown) return;
-        var h=document.documentElement, pct=(h.scrollTop||document.body.scrollTop)/((h.scrollHeight-h.clientHeight)||1);
-        if (pct>0.45) { shown=true; el.classList.add('show'); window.removeEventListener('scroll',check); }
+        var h=document.documentElement, y=window.scrollY||h.scrollTop||document.body.scrollTop||0;
+        var pct=y/Math.max(1,h.scrollHeight-(window.innerHeight||h.clientHeight));
+        if (pct>0.45) show();
       }
+      function show(){ if (shown) return; shown=true; el.classList.add('show'); window.removeEventListener('scroll',check); }
       window.addEventListener('scroll',check,{passive:true});
+      setTimeout(show, 40000);
     })();
   </script>
 </body>
